@@ -1,6 +1,6 @@
 // file to hold the display view for various element positions
 
-console.log(currentConditions.tempfDisplay)	        
+console.log(currentConditions.tempfDisplay);        
 		        
 // create display elements for current conditions
 var list = Ti.UI.createLabel({

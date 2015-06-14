@@ -59,6 +59,9 @@ var getLocation = function() {
 		        // used to display json data
 		        // console.log(json.current_observation.display_location.city)
 		        
+		        // require display elements
+		        require("display");
+		        
 
 		     }; //getData.onload closing
 			
