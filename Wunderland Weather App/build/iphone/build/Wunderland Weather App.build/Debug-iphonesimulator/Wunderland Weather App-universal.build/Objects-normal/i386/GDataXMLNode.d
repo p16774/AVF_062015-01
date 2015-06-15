@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/GDataXMLNode.m \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/GDataXMLNode.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/GDataXMLNode.m \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/GDataXMLNode.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlexports.h \

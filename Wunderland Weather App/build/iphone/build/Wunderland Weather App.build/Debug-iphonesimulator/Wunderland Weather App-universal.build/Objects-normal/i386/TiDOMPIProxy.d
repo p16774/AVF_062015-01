@@ -1,13 +1,13 @@
 dependencies: \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/TiDOMPIProxy.m \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/TiDOMPIProxy.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/TiDOMNodeProxy.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/TiProxy.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/TiBase.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/TiThreading.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/TiPublicAPI.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/TiEvaluator.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/KrollContext.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/TiDOMPIProxy.m \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/TiDOMPIProxy.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/TiDOMNodeProxy.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/TiProxy.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/TiBase.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/TiThreading.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/TiPublicAPI.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/TiEvaluator.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/KrollContext.h \
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -15,10 +15,10 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/KrollCallback.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/KrollObject.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/nwharry/Documents/Appcelerator_Studio_Workspace/Wunderland\ Weather\ App/build/iphone/Classes/GDataXMLNode.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/KrollCallback.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/KrollObject.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/nwharry/GitHub/AVF_062015-01/Wunderland\ Weather\ App/build/iphone/Classes/GDataXMLNode.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlexports.h \

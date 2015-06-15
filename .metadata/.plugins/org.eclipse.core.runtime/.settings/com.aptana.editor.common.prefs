@@ -5,6 +5,7 @@ AbstractTextEditor.Color.Foreground.SystemDefault=false
 AbstractTextEditor.Color.SelectionForeground=0,0,0
 AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
 CONFLICTING_COLOR=255,61,61
+CONTENT_ASSIST_USER_AGENT_FILTER_TYPE=none
 INCOMING_COLOR=0,0,0
 OUTGOING_COLOR=0,0,0
 RESOLVED_COLOR=115,255,101

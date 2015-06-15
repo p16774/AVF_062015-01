@@ -1,6 +1,6 @@
 // file to hold the display view for various element positions
 
-console.log(currentConditions.tempfDisplay);        
+console.log("got here too");       
 		        
 // create display elements for current conditions
 var list = Ti.UI.createLabel({
@@ -14,3 +14,4 @@ var list = Ti.UI.createLabel({
 	    fontWeight: 'bold'
 	}
 });
+

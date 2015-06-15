@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.simulator.launchConfigurationType">
+<booleanAttribute key="ATTR_CLEAN_BEFORE_LAUNCH" value="true"/>
 <stringAttribute key="ATTR_PROJECT_NAME" value="Wunderland Weather App"/>
 <stringAttribute key="device_id" value="F52B4F8C-BB85-4D70-9B77-47FC5B3E0B33"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
