@@ -1,0 +1,34 @@
+var win = Ti.UI.createWindow({
+	height: '100%',
+	backgroundColor: '#ffffff',
+	layout: 'vertical'
+});
+
+// set global currentConditions app to store elements pulled from API call
+var currentConditions = {};
+
+
+if (Ti.Network.online) {
+	
+	var geoElements = require("geo"),
+		displayElements = require("display");
+		
+		console.log(geoElements);
+		
+	geoElements.getLocation();
+	
+	win.add(displayElements.topView);
+	
+} else {
+	
+	alert("No Network Found. Please Check you Connection and Try Again.");
+	
+}
+
+
+	// add elements to the view
+	displayElements.logoView.add(displayElements.logo);
+	displayElements.topView.add(displayElements.logoView);
+
+
+win.open();

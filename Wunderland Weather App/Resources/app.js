@@ -1,53 +1,34 @@
+// create window
+
+
 var win = Ti.UI.createWindow({
 	height: '100%',
 	backgroundColor: '#ffffff',
 	layout: 'vertical'
 });
 
-var topView = Ti.UI.createView({
-	top: 0
-});
-
-var logoView = Ti.UI.createView({
-	bottom: 10,
-	height: 50
-});
-
-
-// set global currentConditions app to store elements pulled from API call
-var currentConditions = {};
-
 
 if (Ti.Network.online) {
 	
-	require("geo");
-	require("display");
-	getLocation();
+	var geoElements = require("geo").getLocation,
+		displayElements = require("display");
+
+	// run our get geo locaiton API elements	
+	geoElements();
+	
 	
 } else {
 	
 	alert("No Network Found. Please Check you Connection and Try Again.");
 	
-}
+};
 
 
+	// add elements to the view
+	displayElements.logoView.add(displayElements.logo);
+	displayElements.topView.add(displayElements.list);
+	displayElements.topView.add(displayElements.logoView);
+	win.add(displayElements.topView);
 
-var timeView = Ti.UI.createView({
-  top:0,
-  width: '100%',
-  height: '15%',
-  backgroundColor: '#1C1C1C'
-});
-
-
-
-
-var logo = Ti.UI.createImageView({
-	image: 'http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_horz.png',
-});
-
-logoView.add(logo)
-topView.add(logoView);
-win.add(topView);
 
 win.open();

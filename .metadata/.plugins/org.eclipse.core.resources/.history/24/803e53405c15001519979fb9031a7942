@@ -1,0 +1,42 @@
+// file to hold the display view for various element positions
+
+// create overall variable for display content to be exported
+var displayElements = {
+	
+	// create main views for logo placement
+	var topView = Ti.UI.createView({
+		top: 0
+	});
+	
+	var logoView = Ti.UI.createView({
+		bottom: 10,
+		height: 50
+	});      
+	
+	var logo = Ti.UI.createImageView({
+		image: 'http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_horz.png',
+	});
+	 
+			        
+	// create display elements for current conditions
+	var list = Ti.UI.createLabel({
+		  color: '#404040',
+		  text: "Current Conditions",
+		  height: Ti.UI.SIZE,
+		  textAlign: 'center',
+		  verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+		  font:{
+		    fontSize: '55sp',
+		    fontWeight: 'bold'
+		}
+	});
+	
+	// add elements to the view
+	logoView.add(logo);
+	topView.add(logoView);
+	
+};
+
+// export displayElements to other windows
+exports.displayElements = displayElements;
+

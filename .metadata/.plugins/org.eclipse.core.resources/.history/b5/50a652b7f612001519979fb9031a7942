@@ -1,0 +1,46 @@
+var win = Ti.UI.createWindow({
+	height: '100%',
+	backgroundColor: '#ffffff',
+	layout: 'vertical'
+});
+
+
+
+
+// set global currentConditions app to store elements pulled from API call
+var currentConditions = {};
+
+
+if (Ti.Network.online) {
+	
+	require("geo");
+	require("display");
+	getLocation();
+	
+} else {
+	
+	alert("No Network Found. Please Check you Connection and Try Again.");
+	
+}
+
+
+
+var timeView = Ti.UI.createView({
+  top:0,
+  width: '100%',
+  height: '15%',
+  backgroundColor: '#1C1C1C'
+});
+
+
+
+
+var logo = Ti.UI.createImageView({
+	image: 'http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_horz.png',
+});
+
+logoView.add(logo)
+topView.add(logoView);
+win.add(topView);
+
+win.open();

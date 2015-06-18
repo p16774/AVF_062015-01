@@ -581,3 +581,253 @@ java.lang.IllegalArgumentException: Index out of bounds
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-06-15 18:48:04.136
+!MESSAGE (Build 4.0.0.201505202026) [ERROR]  API Request: appServiceLinks, params: 288259fb-3a02-44bb-9ddd-cebf0f1bd7cb returned with unexpected response {"success":false,"description":"Appcelerator Login required to continue ...\n\n{\"app_name\":\"App Details\",\"app_url\":\"https://platform.appcelerator.com/#/app/5578cdd8407457e17f7e85f2\",\"service_urls\":[{\"partner_id\":\"6376D6497C9D48C19C28B4E991C91D5D\",\"service_url\":\"https://platform.appcelerator.comundefined\",\"service_name\":\"Cloud\",\"service_app_url\":\"https://platform.appcelerator.com/#/app.service/api/5578cdd8407457e17f7e85f2\",\"service_app_name\":\"Cloud\",\"links\":[]},{\"partner_id\":\"C59585EA200A4F2DAD9BDA9419A0E332\",\"service_url\":\"https://platform.appcelerator.com/#/metric/installs/app\",\"service_name\":\"Analytics\",\"service_app_url\":\"https://platform.appcelerator.com/#/app.service/analytics/5578cdd8407457e17f7e85f2\",\"service_app_name\":\"App Analytics\",\"links\":[]}]}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-06-15 18:48:04.151
+!MESSAGE (Build 4.0.0.201505202026) [ERROR]  Appcelerator Login required to continue ...
+
+{"app_name":"App Details","app_url":"https://platform.appcelerator.com/#/app/5578cdd8407457e17f7e85f2","service_urls":[{"partner_id":"6376D6497C9D48C19C28B4E991C91D5D","service_url":"https://platform.appcelerator.comundefined","service_name":"Cloud","service_app_url":"https://platform.appcelerator.com/#/app.service/api/5578cdd8407457e17f7e85f2","service_app_name":"Cloud","links":[]},{"partner_id":"C59585EA200A4F2DAD9BDA9419A0E332","service_url":"https://platform.appcelerator.com/#/metric/installs/app","service_name":"Analytics","service_app_url":"https://platform.appcelerator.com/#/app.service/analytics/5578cdd8407457e17f7e85f2","service_app_name":"App Analytics","links":[]}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Appcelerator Login required to continue ...
+
+{"app_name":"App Details","app_url":"https://platform.appcelerator.com/#/app/5578cdd8407457e17f7e85f2","service_urls":[{"partner_id":"6376D6497C9D48C19C28B4E991C91D5D","service_url":"https://platform.appcelerator.comundefined","service_name":"Cloud","service_app_url":"https://platform.appcelerator.com/#/app.service/api/5578cdd8407457e17f7e85f2","service_app_name":"Cloud","links":[]},{"partner_id":"C59585EA200A4F2DAD9BDA9419A0E332","service_url":"https://platform.appcelerator.com/#/metric/installs/app","service_name":"Analytics","service_app_url":"https://platform.appcelerator.com/#/app.service/analytics/5578cdd8407457e17f7e85f2","service_app_name":"App Analytics","links":[]}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:323)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:265)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.getAppData(ThreeSixtyProject.java:392)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.lazyLoad(ThreeSixtyProject.java:376)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.getServiceInstances(ThreeSixtyProject.java:219)
+	at com.appcelerator.titanium360.ui.tiapp.Titanium360TiappContributor$2.run(Titanium360TiappContributor.java:484)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-06-15 18:48:04.171
+!MESSAGE Appcelerator Login required to continue ...
+
+{"app_name":"App Details","app_url":"https://platform.appcelerator.com/#/app/5578cdd8407457e17f7e85f2","service_urls":[{"partner_id":"6376D6497C9D48C19C28B4E991C91D5D","service_url":"https://platform.appcelerator.comundefined","service_name":"Cloud","service_app_url":"https://platform.appcelerator.com/#/app.service/api/5578cdd8407457e17f7e85f2","service_app_name":"Cloud","links":[]},{"partner_id":"C59585EA200A4F2DAD9BDA9419A0E332","service_url":"https://platform.appcelerator.com/#/metric/installs/app","service_name":"Analytics","service_app_url":"https://platform.appcelerator.com/#/app.service/analytics/5578cdd8407457e17f7e85f2","service_app_name":"App Analytics","links":[]}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-06-15 18:48:04.172
+!MESSAGE (Build 4.0.0.201505202026) [ERROR]  Appcelerator Login required to continue ...
+
+{"app_name":"App Details","app_url":"https://platform.appcelerator.com/#/app/5578cdd8407457e17f7e85f2","service_urls":[{"partner_id":"6376D6497C9D48C19C28B4E991C91D5D","service_url":"https://platform.appcelerator.comundefined","service_name":"Cloud","service_app_url":"https://platform.appcelerator.com/#/app.service/api/5578cdd8407457e17f7e85f2","service_app_name":"Cloud","links":[]},{"partner_id":"C59585EA200A4F2DAD9BDA9419A0E332","service_url":"https://platform.appcelerator.com/#/metric/installs/app","service_name":"Analytics","service_app_url":"https://platform.appcelerator.com/#/app.service/analytics/5578cdd8407457e17f7e85f2","service_app_name":"App Analytics","links":[]}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: Appcelerator Login required to continue ...
+
+{"app_name":"App Details","app_url":"https://platform.appcelerator.com/#/app/5578cdd8407457e17f7e85f2","service_urls":[{"partner_id":"6376D6497C9D48C19C28B4E991C91D5D","service_url":"https://platform.appcelerator.comundefined","service_name":"Cloud","service_app_url":"https://platform.appcelerator.com/#/app.service/api/5578cdd8407457e17f7e85f2","service_app_name":"Cloud","links":[]},{"partner_id":"C59585EA200A4F2DAD9BDA9419A0E332","service_url":"https://platform.appcelerator.com/#/metric/installs/app","service_name":"Analytics","service_app_url":"https://platform.appcelerator.com/#/app.service/analytics/5578cdd8407457e17f7e85f2","service_app_name":"App Analytics","links":[]}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:323)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:265)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.getAppData(ThreeSixtyProject.java:392)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.lazyLoad(ThreeSixtyProject.java:376)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.getServiceInstances(ThreeSixtyProject.java:219)
+	at com.appcelerator.titanium360.ui.tiapp.Titanium360TiappContributor$2.run(Titanium360TiappContributor.java:484)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-06-15 18:48:04.173
+!MESSAGE Appcelerator Login required to continue ...
+
+{"app_name":"App Details","app_url":"https://platform.appcelerator.com/#/app/5578cdd8407457e17f7e85f2","service_urls":[{"partner_id":"6376D6497C9D48C19C28B4E991C91D5D","service_url":"https://platform.appcelerator.comundefined","service_name":"Cloud","service_app_url":"https://platform.appcelerator.com/#/app.service/api/5578cdd8407457e17f7e85f2","service_app_name":"Cloud","links":[]},{"partner_id":"C59585EA200A4F2DAD9BDA9419A0E332","service_url":"https://platform.appcelerator.com/#/metric/installs/app","service_name":"Analytics","service_app_url":"https://platform.appcelerator.com/#/app.service/analytics/5578cdd8407457e17f7e85f2","service_app_name":"App Analytics","links":[]}]}
+!SESSION 2015-06-17 21:35:13.454 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/nwharry/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/nwharry/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-06-17 21:35:23.120
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.aptana.git.core 4 1 2015-06-17 21:35:26.987
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-06-17 21:35:26.988
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1584)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1547)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1542)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-06-17 21:35:27.182
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1584)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1547)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1542)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-06-17 21:35:27.183
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1584)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1547)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1542)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY org.eclipse.core.net 1 0 2015-06-17 21:35:27.778
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2015-06-17 21:36:19.124
+!MESSAGE (Build 4.0.0.201505202026) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK windows
+
+!ENTRY com.aptana.samples 4 0 2015-06-17 21:36:19.180
+!MESSAGE (Build 4.0.0.201505202026) [ERROR]  Unable to retrieve the icon at null for sample Employee Directory
+
+!ENTRY com.aptana.samples 4 0 2015-06-17 21:36:19.208
+!MESSAGE (Build 4.0.0.201505202026) [ERROR]  Unable to retrieve the icon at null for sample Movies
+
+!ENTRY com.aptana.samples 4 0 2015-06-17 21:36:19.252
+!MESSAGE (Build 4.0.0.201505202026) [ERROR]  Unable to retrieve the icon at null for sample Geocoder
+
+!ENTRY com.aptana.samples 4 0 2015-06-17 21:36:19.296
+!MESSAGE (Build 4.0.0.201505202026) [ERROR]  Unable to retrieve the icon at null for sample Rss Reader
+
+!ENTRY com.aptana.git.core 4 1 2015-06-17 21:42:50.140
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2015-06-17 21:42:50.140
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1584)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1547)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1542)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-06-17 21:42:50.141
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1584)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1547)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1542)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+!SUBENTRY 1 com.aptana.core 4 0 2015-06-17 21:42:50.142
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/nwharry/GitHub/AVF_062015-01"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1584)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1547)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1542)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:185)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 16 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-06-17 22:24:04.447
+!MESSAGE An internal error occurred during: "Update Android info".
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.getLaunchShortcutManager(AndroidSDKLocator.java:442)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.parseTiInfo(AndroidSDKLocator.java:312)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.updateTiInfo(AndroidSDKLocator.java:227)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.access$0(AndroidSDKLocator.java:224)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator$1.run(AndroidSDKLocator.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
