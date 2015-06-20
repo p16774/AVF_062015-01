@@ -1,0 +1,165 @@
+// create window
+
+
+var win = Ti.UI.createWindow({
+	height: Ti.UI.FULL,
+	backgroundColor: '#ffffff',
+	layout: 'vertical'
+});
+
+// var geoElements = require("geo").getLocation,
+var	displayElements = require("display");
+
+
+if (Ti.Network.online) {
+
+	// run our get geo locaiton API elements	
+	// geoElements();
+	
+	// single application file (can't work the above require elements right)
+	var getLocation = function() {
+		
+		Ti.Geolocation.purpose = "This application is used to display the weather at your current location.";
+		Ti.Geolocation.getCurrentPosition(function(e) {
+		
+			if(e.error) {
+				
+				console.log(e.error);
+				alert("Unable to Acquire Current Location. Please check network and try again.");
+			
+			} else {
+				
+				var locationURL = "http://api.wunderground.com/api/d28a21c2abfd0024/conditions/q/" + e.coords.latitude + "," + e.coords.longitude + ".json";	
+				
+				var getData = Ti.Network.createHTTPClient();
+				
+				getData.onload = function(e){
+					
+			        var json = JSON.parse(this.responseText);  //convert the string to JS object notation
+			        
+			        console.log(json);
+			        
+			        // set variables from API response
+			        var currentConditions = {
+			       			
+			       			city: json.current_observation.display_location.city,
+			       			state: json.current_observation.display_location.state,
+			        		full: json.current_observation.display_location.full,
+			       			forecastURL: json.current_observation.forecast_url,
+			        		tempfFull: json.current_observation.temp_f,
+			        		tempfDisplay: Math.round(json.current_observation.temp_f),
+			        		tempcFull: json.current_observation.temp_c,
+			        		tempcDisplay: Math.round(json.current_observation.temp_c),
+			        		pullTime: json.current_observation.observation_time,
+			        		currentWeather: json.current_observation.weather,
+			        		iconImage: json.current_observation.icon_url.replace("/k/","/j/"),
+			        		visibility: json.current_observation.visibility_mi,
+			        		windDir: json.current_observation.wind_dir,
+			        		windSpeed: json.current_observation.wind_mph,
+			        		windGust: json.current_observation.wind_gust_mph,
+			        		humidity: json.current_observation.relative_humidity
+			        		
+			        	};
+			        			        	
+			        // used to display json data
+			        // console.log(json.current_observation.display_location.city)
+			        
+			        // create link to forecast site
+			        var forcastLink = Ti.UI.createLabel ({
+			        	text: "Click for Full Forecast"
+			        });
+			        
+			        label.addEventListener ({
+			        	// link should open in safari
+			        	Ti.Platform.openURL(currentConditions['forecastURL']);
+			        	
+			        })
+			        
+			        // place values into the app page after data pulled
+			        geoCity = Ti.UI.createLabel({
+					  color: '#900',
+					  font: { fontSize:48 },
+					  shadowColor: '#aaa',
+					  shadowOffset: {x:3, y:3},
+					  shadowRadius: 2,
+					  text: currentConditions['full'],
+					  //textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+					  top: 30,
+					  width: Ti.UI.SIZE, 
+					  //height: Ti.UI.SIZE
+					});
+					
+					geoDate = Ti.UI.createLabel({
+						top: 0,
+						text: currentConditions['pullTime']
+						
+					});
+					
+					geoData = Ti.UI.createLabel({
+						//top: -50,
+						text: "Current Temp: " + currentConditions['tempfDisplay'] + "\xB0F/"
+							+ currentConditions['tempcDisplay'] + "\xB0C\n" 
+							+ "Humidity: " + currentConditions['humidity'] + "\n"
+							+ currentConditions['currentWeather'] + "\n"
+							+ "Visibility: " + currentConditions['visibility'] + " miles\n"
+							+ "Winds out of the " + currentConditions['windDir'] + " at "
+							+ currentConditions['windSpeed'] + " mph with gusts up to "
+							+ currentConditions['windGust'] + " mph\n\n"
+						
+						 
+						//textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+						
+						
+						
+					});
+					
+					// currentConditions icon
+					geoImage = Ti.UI.createImageView ({
+						image: currentConditions['iconImage']
+						
+						
+					});
+					
+					// add the elements to the display
+					displayElements.cityView.add(geoCity);
+					displayElements.dataView.add(geoDate);
+					displayElements.dataView.add(geoImage);
+					displayElements.dataView.add(geoData);
+					displayElements.logoView.add(displayElements.logo);
+					displayElements.fullView.add(displayElements.list);
+					displayElements.fullView.add(displayElements.dataView);
+					
+
+					
+					// add views to the window
+					win.add(displayElements.cityView);
+					displayElements.fullView.add(displayElements.dataView);
+					displayElements.fullView.add(displayElements.logoView);
+					win.add(displayElements.fullView);
+					//win.add(displayElements.logoView);
+					
+			        	
+			     }; //getData.onload closing
+				
+				// setup and run data pull for current location
+				getData.open("GET", locationURL);
+				getData.send();
+
+				
+			}; // end if/else statement
+			
+		});	// end Ti.Geolocation.getCurrentPosition
+		
+	}; // end getLocation function
+	
+} else {
+	
+	alert("No Network Found. Please Check you Connection and Try Again.");
+	
+};
+
+// run our function to grab the locaiton
+getLocation();
+
+
+win.open();

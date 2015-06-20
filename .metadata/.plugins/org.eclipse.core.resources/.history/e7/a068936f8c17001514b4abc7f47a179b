@@ -1,0 +1,50 @@
+// file to hold the display view for various element positions
+
+	
+	// create main views for logo placement
+	exports.fullView = Ti.UI.createView({
+		height: Ti.UI.FULL,
+		top: 0,
+		borderColor: "#000000",
+		borderWidth: 0
+	});
+	
+	exports.cityView = Ti.UI.createView({
+		height: 100
+		
+		
+	});
+	
+	exports.dataView = Ti.UI.createView({
+		height: "50%"
+		
+	});
+	
+	exports.logoView = Ti.UI.createView({
+		bottom: 10,
+		height: 50
+	});     
+	
+	exports.logo = Ti.UI.createImageView({
+		image: 'http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_horz.png',
+	});
+	 
+			        
+	// create display elements for current conditions
+	exports.list = Ti.UI.createLabel({
+		  color: '#404040',
+		  text: "Current Conditions",
+		  top: 5,
+		  height: Ti.UI.SIZE,
+		  textAlign: 'center',
+		  verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+		  font:{
+		    fontSize: '18sp',
+		    fontWeight: 'bold'
+		  }
+	});
+	
+
+// export displayElements to other windows
+//exports.displayElements = displayElements;
+
