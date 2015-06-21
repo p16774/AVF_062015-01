@@ -21,11 +21,125 @@ if (Ti.Network.online) {
 		
 		Ti.Geolocation.purpose = "This application is used to display the weather at your current location.";
 		Ti.Geolocation.getCurrentPosition(function(e) {
+			
 		
 			if(e.error) {
 				
-				console.log(e.error);
-				alert("Unable to Acquire Current Location. Please check network and try again.");
+				/* check for previous data pull and if within the past 6 hours display
+				   this can be a setting eventually that allows the user to define when
+				   or how old the data needs to be to "clear" the system or display
+				   when no network is found */ 
+				  
+				  //console.log(Ti.App.Properties.getString('oldData'));
+				  
+				  // clear data for testing purposes only
+				  // Ti.App.Properties.setString('oldData', "");
+				  
+				 if ((Ti.App.Properties.getString('oldData') == "") || (!Ti.App.Properties.getString('oldData'))) {
+				 	
+				 	//console.log(e.error);
+				 	alert("Unable to Acquire Current Location. Please check network and try again.");
+				 	
+				 	var noData = Ti.UI.createLabel({
+				 		text: "No Network Found\nPlease Check Network\n\n",
+				 		height: Ti.UI.FULL,
+				 		top: 150,
+				 		textAlign: 'center'
+				 	});
+				 	
+				 	displayElements.fullView.add(noData);
+				 	displayElements.logoView.add(displayElements.logo)
+				 	displayElements.fullView.add(displayElements.logoView);
+				 	win.add(displayElements.fullView);
+				 	
+				 } else {
+				
+				//console.log(e.error);
+				alert("Unable to Acquire Current Location. Displaying Previous Data.");
+				
+				// retrieve old data and parse it out
+				var currentConditions = JSON.parse(Ti.App.Properties.getString('oldData'));
+				
+				console.log(currentConditions);
+				
+			        // create link to forecast site
+			        var forecastLink = Ti.UI.createLabel ({
+			        	text: "Click for Full Forecast"
+			        });
+			        
+			        
+			        displayElements.logo.addEventListener ('click', function(e) {
+			        	// link should open in safari
+			        	Ti.Platform.openURL(currentConditions['forecastURL']);
+			        });
+			        
+			        // place values into the app page after data pulled
+			        geoCity = Ti.UI.createLabel({
+					  color: '#900',
+					  font: { fontSize:48 },
+					  shadowColor: '#aaa',
+					  shadowOffset: {x:3, y:3},
+					  shadowRadius: 2,
+					  text: currentConditions['full'],
+					  //textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+					  top: 30,
+					  width: Ti.UI.SIZE, 
+					  //height: Ti.UI.SIZE
+					});
+					
+					geoDate = Ti.UI.createLabel({
+						top: 0,
+						text: currentConditions['pullTime']
+						
+					});
+					
+					geoData = Ti.UI.createLabel({
+						//top: -50,
+						left: 10,
+						right: 10,
+						text: "Current Temp: " + currentConditions['tempfDisplay'] + "\xB0F/"
+							+ currentConditions['tempcDisplay'] + "\xB0C\n" 
+							+ "Humidity: " + currentConditions['humidity'] + "\n"
+							+ currentConditions['currentWeather'] + "\n"
+							+ "Visibility: " + currentConditions['visibility'] + " miles\n"
+							+ "Winds out of the " + currentConditions['windDir'] + " at "
+							+ currentConditions['windSpeed'] + " mph with gusts up to "
+							+ currentConditions['windGust'] + " mph\n\n"
+						
+						 
+						//textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+						
+						
+						
+					});
+					
+					// currentConditions icon
+					geoImage = Ti.UI.createImageView ({
+						image: currentConditions['iconImage']
+						
+						
+					});
+					
+					// add the elements to the display
+					displayElements.cityView.add(geoCity);
+					displayElements.dataView.add(geoDate);
+					displayElements.dataView.add(geoImage);
+					displayElements.dataView.add(geoData);
+					displayElements.dataView.add(forecastLink);
+					displayElements.logoView.add(displayElements.logo);
+					displayElements.fullView.add(displayElements.list);
+					displayElements.fullView.add(displayElements.dataView);
+					
+
+					
+					// add views to the window
+					win.add(displayElements.cityView);
+					displayElements.fullView.add(displayElements.dataView);
+					displayElements.fullView.add(displayElements.logoView);
+					win.add(displayElements.fullView);
+					//win.add(displayElements.logoView);
+				
+				}; //close if/else statement determining previous data
 			
 			} else {
 				
@@ -60,6 +174,10 @@ if (Ti.Network.online) {
 			        		humidity: json.current_observation.relative_humidity
 			        		
 			        	};
+			        	
+			        // save data and clear past information
+			        Ti.App.Properties.setString('oldData', "");
+			        Ti.App.Properties.setString('oldData', JSON.stringify(currentConditions));
 			        			        	
 			        // used to display json data
 			        // console.log(json.current_observation.display_location.city)
