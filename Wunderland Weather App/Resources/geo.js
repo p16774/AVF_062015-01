@@ -7,6 +7,9 @@ exports.getLocation = function() {
 		// require our display elements
 		var	displayElements = require("display");
 		
+		// create variable for our SQLite loop elements
+		var conditionObject = "";
+		
 	
 		if(e.error) {
 			
@@ -128,6 +131,10 @@ exports.getLocation = function() {
 		
 		} else {
 			
+			// create and open SQLite database
+			var geoDB = Ti.Database.open('weather');
+			geoDB.execute("CREATE TABLE IF NOT EXISTS geoLocate (id INTEGER PRIMARY KEY, city TEXT,state TEXT,full TEXT,forecastURL TEXT,tempfFull INTEGER,tempcFull INTEGER,tempfDisplay REAL,tempcDisplay REAL,pullTime TEXT,currentWeather TEXT,iconImage TEXT,visibility TEXT,windDir TEXT,windSpeed TEXT,windGust TEXT,humidity TEXT)");
+			
 			var locationURL = "http://api.wunderground.com/api/d28a21c2abfd0024/conditions/q/" + e.coords.latitude + "," + e.coords.longitude + ".json";	
 			
 			var getData = Ti.Network.createHTTPClient();
@@ -160,7 +167,59 @@ exports.getLocation = function() {
 		        		
 		        	};
 		        	
-		        // save data and clear past information
+
+
+
+		        
+		        // loops through object and insert into SQLite
+		        for (var key in currentConditions) {
+		        	
+		        	if (currentConditions.hasOwnProperty(key)) {
+		        		
+		        		// shorten value of object property
+		        		var obj = currentConditions[key];
+		        		   						
+          				// for testing output of loop
+          				// console.log(key + " = " + obj);
+          				
+          				// encapsulate the variable if a comma is found
+          				var pattern = new RegExp(","),
+          					objTest = pattern.test(obj);
+          					
+          				if (objTest === true) {
+          					
+          					//console.log("this is true for " + obj);
+          					
+          					// add encapsulation to the variable if a comma is found
+          					conditionObject = conditionObject + ",\"" + obj + "\"";
+          					
+          				} else {
+          				
+          					// add values to our object for SQLite insertion for all other variables
+          					conditionObject = conditionObject + "," + obj;
+          					
+          				}; // end for/else statement to find commas
+          						
+          			};
+          		};
+          		
+          		// remove the preceeding comma
+          		while (conditionObject.charAt(0) === ",") {
+          			conditionObject = conditionObject.substr(1);
+          		};
+          		
+          		// testing purposes of conditionObject
+          		console.log(conditionObject);
+          		
+          		
+          		// take loops variable and insert into database
+          		        	
+          				        	
+          				        	
+          				        	
+          				        	
+          				        	
+		        // save data and clear past information in local storage
 		        Ti.App.Properties.setString('oldData', "");
 		        Ti.App.Properties.setString('oldData', JSON.stringify(currentConditions));
 		        			        	
