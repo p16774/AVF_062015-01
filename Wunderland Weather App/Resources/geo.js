@@ -10,6 +10,11 @@ exports.getLocation = function() {
 		// create variable for our SQLite loop elements
 		var conditionObject = "";
 		
+		// create and open SQLite database while creating the table if one doesn't exist'
+		var geoDB = Ti.Database.open('weather');
+		geoDB.execute("CREATE TABLE IF NOT EXISTS geoLocate (id INTEGER PRIMARY KEY, city TEXT,state TEXT,full TEXT,forecastURL TEXT,tempfFull INTEGER,tempcFull INTEGER,tempfDisplay REAL,tempcDisplay REAL,pullTime TEXT,currentWeather TEXT,iconImage TEXT,visibility TEXT,windDir TEXT,windSpeed TEXT,windGust TEXT,humidity TEXT)");
+
+		
 	
 		if(e.error) {
 			
@@ -23,7 +28,10 @@ exports.getLocation = function() {
 			  // clear data for testing purposes only
 			  // Ti.App.Properties.setString('oldData', "");
 			  
-			 if ((Ti.App.Properties.getString('oldData') == "") || (!Ti.App.Properties.getString('oldData'))) {
+			  // pull data from SQL to verify saved information
+			  dataVerify = geoDB.execute('SELECT * FROM weather WHERE (id = 1)');
+			  
+			 if (!dataVerify.next()) {
 			 	
 			 	//console.log(e.error);
 			 	alert("Unable to Acquire Current Location. Please check network and try again.");
@@ -36,19 +44,27 @@ exports.getLocation = function() {
 			 	});
 			 	
 			 	displayElements.fullView.add(noData);
-			 	displayElements.logoView.add(displayElements.logo)
+			 	displayElements.logoView.add(displayElements.logo);
 			 	displayElements.fullView.add(displayElements.logoView);
 			 	win.add(displayElements.fullView);
 			 	
+			 	// close the database that had no data
+			 	geoDB.close();
+			 	
 			 } else {
+			 	
+				// pull a new database variable
+				var oldData = geoDB.execute('SELECT * FROM weather WHERE (id = 1)');
+				
+				console.log(oldData);
 			
-			//console.log(e.error);
-			alert("Unable to Acquire Current Location. Displaying Previous Data.");
-			
-			// retrieve old data and parse it out
-			var currentConditions = JSON.parse(Ti.App.Properties.getString('oldData'));
-			
-			console.log(currentConditions);
+				//console.log(e.error);
+				alert("Unable to Acquire Current Location. Displaying Previous Data.");
+				
+				// retrieve old data and parse it out
+				// var currentConditions = JSON.parse(Ti.App.Properties.getString('oldData'));
+				
+				console.log(currentConditions);
 			
 		        // create link to forecast site
 		        var forecastLink = Ti.UI.createLabel ({
@@ -131,10 +147,11 @@ exports.getLocation = function() {
 		
 		} else {
 			
-			// create and open SQLite database
-			var geoDB = Ti.Database.open('weather');
-			geoDB.execute("CREATE TABLE IF NOT EXISTS geoLocate (id INTEGER PRIMARY KEY, city TEXT,state TEXT,full TEXT,forecastURL TEXT,tempfFull INTEGER,tempcFull INTEGER,tempfDisplay REAL,tempcDisplay REAL,pullTime TEXT,currentWeather TEXT,iconImage TEXT,visibility TEXT,windDir TEXT,windSpeed TEXT,windGust TEXT,humidity TEXT)");
-			
+							// pull a new database variable
+				var oldData = geoDB.execute('SELECT * FROM weather WHERE (id = 1)');
+				
+				console.log("This is the old data" + oldData);
+						
 			var locationURL = "http://api.wunderground.com/api/d28a21c2abfd0024/conditions/q/" + e.coords.latitude + "," + e.coords.longitude + ".json";	
 			
 			var getData = Ti.Network.createHTTPClient();
@@ -147,7 +164,8 @@ exports.getLocation = function() {
 		        
 		        // set variables from API response
 		        var currentConditions = {
-		       			
+		        	
+		       			id: 1, // set to only hold one past data
 		       			city: json.current_observation.display_location.city,
 		       			state: json.current_observation.display_location.state,
 		        		full: json.current_observation.display_location.full,
@@ -211,17 +229,34 @@ exports.getLocation = function() {
           		// testing purposes of conditionObject
           		console.log(conditionObject);
           		
+          		// determine if this is a first time data save or if we need to update previous info
+          		var dataCheck = geoDB.execute('SELECT FROM weather WHERE (id = 1)');
+          		if (!dataCheck.next()) {
           		
-          		// take loops variable and insert into database
-          		        	
-          				        	
-          				        	
-          				        	
+          			// take loops variable and insert into database
+          			geoDB.execute('INSERT INTO weather VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', conditionObject); 
+          			
+          			// close database
+          			geoDB.close();      	
+          				        			
+          		} else {
+          			
+          			// delete data from the table to update to new info and remove empty space
+          			geoDB.execute('DELETE FROM weather');
+          			geoDB.execute('VACUUM');
+          		
+          			// take loops variable and insert into database
+          			geoDB.execute('INSERT INTO weather VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', conditionObject); 
+          			
+          			// close database
+          			geoDB.close();
+          			
+          		};	        	
           				        	
           				        	
 		        // save data and clear past information in local storage
-		        Ti.App.Properties.setString('oldData', "");
-		        Ti.App.Properties.setString('oldData', JSON.stringify(currentConditions));
+		        //Ti.App.Properties.setString('oldData', "");
+		        //Ti.App.Properties.setString('oldData', JSON.stringify(currentConditions));
 		        			        	
 		        // used to display json data
 		        // console.log(json.current_observation.display_location.city)
@@ -310,6 +345,8 @@ exports.getLocation = function() {
 			getData.open("GET", locationURL);
 			getData.send();
 
+			// close database
+			geoDB.close();
 			
 		}; // end if/else statement
 		
