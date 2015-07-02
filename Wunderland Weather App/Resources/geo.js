@@ -12,9 +12,12 @@ exports.getLocation = function() {
 		
 		// create and open SQLite database while creating the table if one doesn't exist'
 		var geoDB = Ti.Database.open('weather');
-		geoDB.execute("CREATE TABLE IF NOT EXISTS geoLocate (id INTEGER PRIMARY KEY, city TEXT,state TEXT,full TEXT,forecastURL TEXT,tempfFull INTEGER,tempcFull INTEGER,tempfDisplay REAL,tempcDisplay REAL,pullTime TEXT,currentWeather TEXT,iconImage TEXT,visibility TEXT,windDir TEXT,windSpeed TEXT,windGust TEXT,humidity TEXT)");
+		var createCheck = geoDB.execute("CREATE TABLE IF NOT EXISTS geoLocate (id INTEGER PRIMARY KEY, city TEXT, state TEXT, full TEXT, forecastURL TEXT, tempfFull INTEGER, tempcFull INTEGER, tempfDisplay TEXT, tempcDisplay TEXT, pullTime TEXT, currentWeather TEXT, iconImage TEXT, visibility TEXT, windDir TEXT, windSpeed TEXT, windGust TEXT, humidity TEXT)");
 
+		var dataVerify = geoDB.execute('SELECT sql FROM sqlite_master WHERE type = "table" AND tbl_name = "geoLocate"');
 		
+		console.log(JSON.stringify(createCheck) + " this is the create result");
+		console.log(JSON.stringify(dataVerify) + "This is the stringify data");
 	
 		if(e.error) {
 			
@@ -29,9 +32,12 @@ exports.getLocation = function() {
 			  // Ti.App.Properties.setString('oldData', "");
 			  
 			  // pull data from SQL to verify saved information
-			  dataVerify = geoDB.execute('SELECT * FROM weather WHERE (id = 1)');
+			  //dataVerify = geoDB.execute('SELECT * FROM geoLocate WHERE id = 1');
+			  dataVerify = geoDB.execute('SELECT sql FROM sqlite_master WHERE type = "table" AND tbl_name = "geoLocate"');
 			  
-			 if (!dataVerify.next()) {
+			  console.log(JSON.stringify(dataVerify) + "This is the stringify data");
+			  
+			 if (!dataVerify.isValidRow()) {
 			 	
 			 	//console.log(e.error);
 			 	alert("Unable to Acquire Current Location. Please check network and try again.");
@@ -54,17 +60,17 @@ exports.getLocation = function() {
 			 } else {
 			 	
 				// pull a new database variable
-				var oldData = geoDB.execute('SELECT * FROM weather WHERE (id = 1)');
+				var oldData = geoDB.execute('SELECT * FROM geoLocate WHERE id = 1');
 				
-				console.log(oldData);
+				console.log(JSON.stringify(oldData) + " this is the data pull data");
 			
 				//console.log(e.error);
 				alert("Unable to Acquire Current Location. Displaying Previous Data.");
 				
 				// retrieve old data and parse it out
-				// var currentConditions = JSON.parse(Ti.App.Properties.getString('oldData'));
+				var currentConditions = JSON.parse(Ti.App.Properties.getString('oldData'));
 				
-				console.log(currentConditions);
+				//console.log(currentConditions);
 			
 		        // create link to forecast site
 		        var forecastLink = Ti.UI.createLabel ({
@@ -147,8 +153,8 @@ exports.getLocation = function() {
 		
 		} else {
 			
-							// pull a new database variable
-				var oldData = geoDB.execute('SELECT * FROM weather WHERE (id = 1)');
+				// pull a new database variable
+				var oldData = geoDB.execute('SELECT * FROM geoLocate WHERE id = 1');
 				
 				console.log("This is the old data" + oldData);
 						
@@ -200,11 +206,13 @@ exports.getLocation = function() {
           				// for testing output of loop
           				// console.log(key + " = " + obj);
           				
-          				// encapsulate the variable if a comma is found
-          				var pattern = new RegExp(","),
-          					objTest = pattern.test(obj);
+          				// encapsulate the variable
+          				//var pattern = new RegExp(","),
+          				//	objTest = pattern.test(obj);
           					
-          				if (objTest === true) {
+          					conditionObject = conditionObject + ",'" + obj + "'";
+          					
+          				/*if (objTest === true) {
           					
           					//console.log("this is true for " + obj);
           					
@@ -216,7 +224,7 @@ exports.getLocation = function() {
           					// add values to our object for SQLite insertion for all other variables
           					conditionObject = conditionObject + "," + obj;
           					
-          				}; // end for/else statement to find commas
+          				};*/ // end for/else statement to find commas
           						
           			};
           		};
@@ -230,23 +238,38 @@ exports.getLocation = function() {
           		console.log(conditionObject);
           		
           		// determine if this is a first time data save or if we need to update previous info
-          		var dataCheck = geoDB.execute('SELECT FROM weather WHERE (id = 1)');
-          		if (!dataCheck.next()) {
+          		var dataCheck = geoDB.execute('SELECT FROM geoLocate WHERE id = 1');
+          		
+          		console.log(dataCheck);
+          		
+          		if (!dataCheck) {
+          			
+          			console.log("no data found");
           		
           			// take loops variable and insert into database
-          			geoDB.execute('INSERT INTO weather VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', conditionObject); 
+          			var insertStatement = geoDB.execute('INSERT INTO geoLocate VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', '1','Sunnyvale','CA','Sunnyvale, CA','http://www.wunderground.com/US/CA/Sunnyvale.html','81.2','81','27.3','27','Last Updated on July 1, 5:45 PM PDT','Mostly Cloudy','http://icons.wxug.com/i/c/j/mostlycloudy.gif','10.0','NE','2','5.0','37%');
+          			
+          			console.log(insertStatement + " insert here");
+          			
+          			//console.log(statement);
+          			
+          			var validateCheck = geoDB.execute('SELECT * FROM geoLocate');
+          			
+          			console.log(validateCheck + " this is the validation check"); 
           			
           			// close database
           			geoDB.close();      	
           				        			
           		} else {
           			
+          			console.log("data found and removed");
+          			
           			// delete data from the table to update to new info and remove empty space
-          			geoDB.execute('DELETE FROM weather');
+          			geoDB.execute('DELETE FROM geoLocate');
           			geoDB.execute('VACUUM');
           		
           			// take loops variable and insert into database
-          			geoDB.execute('INSERT INTO weather VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', conditionObject); 
+          			geoDB.execute('INSERT INTO geoLocate VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', conditionObject); 
           			
           			// close database
           			geoDB.close();
