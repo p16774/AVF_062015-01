@@ -1,7 +1,7 @@
 {
 	"target": "simulator",
 	"deployType": "development",
-	"iosSdkVersion": "8.3",
+	"iosSdkVersion": "8.4",
 	"deviceFamily": "universal",
 	"iosSdkPath": "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/iphone",
 	"tiCoreHash": "5710cda7b179a3c8391cc94011e308de",
