@@ -12,14 +12,11 @@ exports.getLocation = function() {
 		
 		// create and open SQLite database while creating the table if one doesn't exist'
 		var geoDB = Ti.Database.open('weather');
-		var createCheck = geoDB.execute("CREATE TABLE IF NOT EXISTS geoLocate (id INTEGER PRIMARY KEY, city TEXT, state TEXT, full TEXT, forecastURL TEXT, tempfFull INTEGER, tempcFull INTEGER, tempfDisplay TEXT, tempcDisplay TEXT, pullTime TEXT, currentWeather TEXT, iconImage TEXT, visibility TEXT, windDir TEXT, windSpeed TEXT, windGust TEXT, humidity TEXT)");
-
-		var dataVerify = geoDB.execute('SELECT sql FROM sqlite_master WHERE type = "table" AND tbl_name = "geoLocate"');
-		
-		console.log(JSON.stringify(createCheck) + " this is the create result");
-		console.log(JSON.stringify(dataVerify) + "This is the stringify data");
+		geoDB.execute("CREATE TABLE IF NOT EXISTS geoLocate (id INTEGER PRIMARY KEY, city TEXT, state TEXT, full TEXT, forecastURL TEXT, tempfFull INTEGER, tempcFull INTEGER, tempfDisplay TEXT, tempcDisplay TEXT, pullTime TEXT, currentWeather TEXT, iconImage TEXT, visibility TEXT, windDir TEXT, windSpeed TEXT, windGust TEXT, humidity TEXT)");
 	
 		if(e.error) {
+			
+			console.log("This is the error " + e.error);
 			
 			/* check for previous data pull and if within the past 6 hours display
 			   this can be a setting eventually that allows the user to define when
@@ -32,12 +29,12 @@ exports.getLocation = function() {
 			  // Ti.App.Properties.setString('oldData', "");
 			  
 			  // pull data from SQL to verify saved information
-			  //dataVerify = geoDB.execute('SELECT * FROM geoLocate WHERE id = 1');
-			  dataVerify = geoDB.execute('SELECT sql FROM sqlite_master WHERE type = "table" AND tbl_name = "geoLocate"');
+			  var dataVerify = geoDB.execute('SELECT * FROM geoLocate WHERE id = 1');
+			  //dataVerify = geoDB.execute('SELECT sql FROM sqlite_master WHERE type = "table" AND tbl_name = "geoLocate"');
 			  
-			  console.log(JSON.stringify(dataVerify) + "This is the stringify data");
+			  //console.log(JSON.stringify(dataVerify) + "This is the stringify data");
 			  
-			 if (!dataVerify.isValidRow()) {
+			 if (!dataVerify) {
 			 	
 			 	//console.log(e.error);
 			 	alert("Unable to Acquire Current Location. Please check network and try again.");
@@ -154,9 +151,9 @@ exports.getLocation = function() {
 		} else {
 			
 				// pull a new database variable
-				var oldData = geoDB.execute('SELECT * FROM geoLocate WHERE id = 1');
+				var oldData = geoDB.execute('SELECT * FROM geoLocate');
 				
-				console.log("This is the old data" + oldData);
+				console.log("Rowcount: " + oldData.rowCount);
 						
 			var locationURL = "http://api.wunderground.com/api/d28a21c2abfd0024/conditions/q/" + e.coords.latitude + "," + e.coords.longitude + ".json";	
 			
@@ -170,8 +167,7 @@ exports.getLocation = function() {
 		        
 		        // set variables from API response
 		        var currentConditions = {
-		        	
-		       			id: 1, // set to only hold one past data
+		        
 		       			city: json.current_observation.display_location.city,
 		       			state: json.current_observation.display_location.state,
 		        		full: json.current_observation.display_location.full,
@@ -247,9 +243,15 @@ exports.getLocation = function() {
           			console.log("no data found");
           		
           			// take loops variable and insert into database
-          			var insertStatement = geoDB.execute('INSERT INTO geoLocate VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', '1','Sunnyvale','CA','Sunnyvale, CA','http://www.wunderground.com/US/CA/Sunnyvale.html','81.2','81','27.3','27','Last Updated on July 1, 5:45 PM PDT','Mostly Cloudy','http://icons.wxug.com/i/c/j/mostlycloudy.gif','10.0','NE','2','5.0','37%');
+          			var insertData = "'INSERT INTO geoLocate (city, state, full, forecastURL, tempfFull, tempcFull, tempfDisplay, tempcDisplay, pullTime, currentWeather, iconImage, visibility, windDir, windSpeed, windGust, humidity) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', " + conditionObject;
+          			console.log(insertData);
+          			geoDB.execute(insertData);
           			
-          			console.log(insertStatement + " insert here");
+          			var rowID = geoDB.lastInsertRowId;
+          			var rows = geoDB.rowCount;
+          			
+          			console.log("This is the row ID " + rowID);
+          			console.log("This is the row Count " + rows);
           			
           			//console.log(statement);
           			
