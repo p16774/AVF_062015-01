@@ -13,7 +13,7 @@
 @class TiHost;
 
 /**
- The base class for all WunderlandWeatherApp modules
+ The base class for all TheMovieDatabaseSearch modules
  */
 @interface TiModule : TiProxy 
 {
@@ -51,30 +51,30 @@
 // lifecycle
 
 /**
- WunderlandWeatherApp Platform calls this method on startup.
+ TheMovieDatabaseSearch Platform calls this method on startup.
  */
 -(void)startup;
 
 /**
- WunderlandWeatherApp Platform calls this method on shutdown.
+ TheMovieDatabaseSearch Platform calls this method on shutdown.
  @param sender The sender of the event.
  */
 -(void)shutdown:(id)sender;
 
 /**
- WunderlandWeatherApp Platform calls this method on suspend.
+ TheMovieDatabaseSearch Platform calls this method on suspend.
  @param sender The sender of the event.
  */
 -(void)suspend:(id)sender;
 
 /**
- WunderlandWeatherApp Platform calls this method on entering background.
+ TheMovieDatabaseSearch Platform calls this method on entering background.
  @param sender The sender of the event.
  */
 -(void)paused:(id)sender;
 
 /**
- WunderlandWeatherApp Platform calls this method on resume.
+ TheMovieDatabaseSearch Platform calls this method on resume.
  @param sender The sender of the event.
  */
 -(void)resume:(id)sender;

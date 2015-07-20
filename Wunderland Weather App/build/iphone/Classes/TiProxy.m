@@ -34,7 +34,7 @@ NSString * const TiExceptionOSError = @"The iOS reported an error";
 //Should be rare, but also useful if arguments are used improperly.
 NSString * const TiExceptionInternalInconsistency = @"Value was not the value expected";
 
-//Rare exceptions to indicate a bug in the _wunderlandweatherapp code (Eg, method that a subclass should have implemented)
+//Rare exceptions to indicate a bug in the _themoviedatabasesearch code (Eg, method that a subclass should have implemented)
 NSString * const TiExceptionUnimplementedFunction = @"Subclass did not implement required method";
 
 NSString * const TiExceptionMemoryFailure = @"Memory allocation failed";
@@ -1292,15 +1292,15 @@ DEFINE_EXCEPTIONS
 	});
 	Class proxyClass = (Class)CFDictionaryGetValue(classNameLookup, qualifiedName);
 	if (proxyClass == nil) {
-		NSString *_wunderlandweatherapp = [NSString stringWithFormat:@"%@%s",@"Ti","tanium."];
-		if ([qualifiedName hasPrefix:_wunderlandweatherapp]) {
+		NSString *_themoviedatabasesearch = [NSString stringWithFormat:@"%@%s",@"Ti","tanium."];
+		if ([qualifiedName hasPrefix:_themoviedatabasesearch]) {
 			qualifiedName = [qualifiedName stringByReplacingCharactersInRange:NSMakeRange(2, 6) withString:@""];
 		}
 		NSString *className = [[qualifiedName stringByReplacingOccurrencesOfString:@"." withString:@""] stringByAppendingString:@"Proxy"];
 		proxyClass = NSClassFromString(className);
 		if (proxyClass==nil) {
 			DebugLog(@"[WARN] Attempted to load %@: Could not find class definition.", className);
-			@throw [NSException exceptionWithName:@"org.wunderlandweatherapp.module"
+			@throw [NSException exceptionWithName:@"org.themoviedatabasesearch.module"
 										reason:[NSString stringWithFormat:@"Class not found: %@", qualifiedName]
 										userInfo:nil];
 		}

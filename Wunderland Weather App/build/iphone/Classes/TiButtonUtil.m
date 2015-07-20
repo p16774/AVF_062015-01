@@ -16,23 +16,23 @@
 {
 	switch (type)
 	{
-		case UIWunderlandWeatherAppNativeItemInfoLight:
+		case UITheMovieDatabaseSearchNativeItemInfoLight:
 		{
 			return [UIButton buttonWithType:UIButtonTypeInfoLight];
 		}
-		case UIWunderlandWeatherAppNativeItemInfoDark:
+		case UITheMovieDatabaseSearchNativeItemInfoDark:
 		{
 			return [UIButton buttonWithType:UIButtonTypeInfoDark];
 		}
-		case UIWunderlandWeatherAppNativeItemDisclosure:
+		case UITheMovieDatabaseSearchNativeItemDisclosure:
 		{
 			return [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 		}
-		case UIWunderlandWeatherAppNativeItemContactAdd:
+		case UITheMovieDatabaseSearchNativeItemContactAdd:
 		{
 			return [UIButton buttonWithType:UIButtonTypeContactAdd];
 		}
-		case UIWunderlandWeatherAppNativeItemSpinner:
+		case UITheMovieDatabaseSearchNativeItemSpinner:
 		{
 			UIActivityIndicatorView *button = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite] autorelease];
 			[button startAnimating];

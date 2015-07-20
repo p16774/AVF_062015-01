@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Week 3 Wunderland Weather App/Resources/geo.js&apos; to &apos;search.js&apos;" description="Rename resource &apos;geo.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/geo.js" name="search.js" stamp="1437339977184" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Week 3 Wunderland Weather App/Resources/movie.png&apos; to &apos;icon.png&apos;" description="Rename resource &apos;movie.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/movie.png" name="icon.png" stamp="1437339989471" updateReferences="true"/>
+</session>

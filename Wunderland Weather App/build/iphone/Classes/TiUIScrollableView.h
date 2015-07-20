@@ -33,7 +33,7 @@
     BOOL pageChanged;
 }
 
-#pragma mark - WunderlandWeatherApp Internal Use Only
+#pragma mark - TheMovieDatabaseSearch Internal Use Only
 -(void)manageRotation;
 -(UIScrollView*)scrollview;
 -(void)refreshScrollView:(CGRect)visibleBounds readd:(BOOL)readd;

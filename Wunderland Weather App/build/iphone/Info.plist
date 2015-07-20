@@ -9,20 +9,20 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>appicon.png</string>
+	<string>movie.png</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>com.project3w.weatherapp</string>
+			<string>com.project3w.moviesearch</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wunderlandweatherapp</string>
+				<string>themoviedatabasesearch</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.project3w.weatherapp</string>
+	<string>com.project3w.moviesearch</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -66,7 +66,6 @@
 	</array>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>appicon.png</string>
 	</array>
 	<key>UILaunchImages</key>
 	<array>

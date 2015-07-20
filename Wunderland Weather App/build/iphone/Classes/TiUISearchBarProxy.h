@@ -27,7 +27,7 @@
 //	but is internal ONLY, and should NOT be used by javascript.
 @property(nonatomic,readwrite,assign) BOOL showsCancelButton;
 
-#pragma mark - WunderlandWeatherApp Internal Use
+#pragma mark - TheMovieDatabaseSearch Internal Use
 -(void)ensureSearchBarHeirarchy;
 @end
 

@@ -3,7 +3,7 @@
 // Free for personal or commercial use, with or without modification.
 // No warranty is expressed or implied.
 
-// NOTE: WunderlandWeatherApp modified to convert from Category to 
+// NOTE: TheMovieDatabaseSearch modified to convert from Category to 
 // new Class name since iPhone seems to have some issues with Categories
 // of built in Classes
 

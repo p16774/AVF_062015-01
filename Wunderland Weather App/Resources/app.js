@@ -15,12 +15,12 @@ var win = Ti.UI.createWindow({
 
 // check network and run geo functions
 if (Ti.Network.online) {
-
+	
 	// require our geo elements	
-	var geoElements = require("geo");
+	var movieSearch = require("search");
 	
 	// run our geo function
-	geoElements.getLocation();
+	movieSearch.getMovie();
 	
 	
 } else {

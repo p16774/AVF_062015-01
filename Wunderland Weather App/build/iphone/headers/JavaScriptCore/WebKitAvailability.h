@@ -1,8 +1,8 @@
 /**
- * WunderlandWeatherApp WunderlandWeatherApp License
- * This source code and all modifications done by WunderlandWeatherApp
+ * TheMovieDatabaseSearch TheMovieDatabaseSearch License
+ * This source code and all modifications done by TheMovieDatabaseSearch
  * are licensed under the Apache Public License (version 2) and
- * are Copyright (c) 2009-2014 by WunderlandWeatherApp, Inc.
+ * are Copyright (c) 2009-2014 by TheMovieDatabaseSearch, Inc.
  */
 
 /*

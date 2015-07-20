@@ -8,12 +8,12 @@
 #define STRING(x) _QUOTEME(x)
 
 NSString * const TI_APPLICATION_DEPLOYTYPE = @"development";
-NSString * const TI_APPLICATION_ID = @"com.project3w.weatherapp";
-NSString * const TI_APPLICATION_PUBLISHER = @"nwharry";
-NSString * const TI_APPLICATION_URL = @"http://";
-NSString * const TI_APPLICATION_NAME = @"Wunderland Weather App";
+NSString * const TI_APPLICATION_ID = @"com.project3w.moviesearch";
+NSString * const TI_APPLICATION_PUBLISHER = @"Project3W";
+NSString * const TI_APPLICATION_URL = @"http://www.project3w.com";
+NSString * const TI_APPLICATION_NAME = @"The Movie Database Search";
 NSString * const TI_APPLICATION_VERSION = @"1.0";
-NSString * const TI_APPLICATION_DESCRIPTION = @"undefined";
+NSString * const TI_APPLICATION_DESCRIPTION = @"Week 3 Initial Build";
 NSString * const TI_APPLICATION_COPYRIGHT = @"2015 by nwharry";
 NSString * const TI_APPLICATION_GUID = @"288259fb-3a02-44bb-9ddd-cebf0f1bd7cb";
 BOOL const TI_APPLICATION_ANALYTICS = true;

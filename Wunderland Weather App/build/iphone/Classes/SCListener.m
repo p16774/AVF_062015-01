@@ -126,13 +126,13 @@ static void listeningCallback(void *inUserData, AudioQueueRef inAQ, AudioQueueBu
 #if TARGET_IPHONE_SIMULATOR
 	format.mSampleRate = 44100.0;
 #else
-    /*WunderlandWeatherApp Modification begin*/
+    /*TheMovieDatabaseSearch Modification begin*/
 //	UInt32 ioDataSize = sizeof(sampleRate);
 //	AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareSampleRate, &ioDataSize, &sampleRate);
 //	format.mSampleRate = sampleRate;
     sampleRate = [[AVAudioSession sharedInstance] sampleRate];
     format.mSampleRate = sampleRate;
-    /*WunderlandWeatherApp Modifications End*/
+    /*TheMovieDatabaseSearch Modifications End*/
 #endif
 	format.mFormatID = kAudioFormatLinearPCM;
 	format.mFormatFlags = kAudioFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked;

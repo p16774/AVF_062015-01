@@ -1,68 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.project3w.weatherapp</id>
-    <name>Wunderland Weather App</name>
-    <version>1.0</version>
-    <publisher>nwharry</publisher>
-    <url>http://</url>
-    <description>undefined</description>
-    <copyright>2015 by nwharry</copyright>
-    <icon>appicon.png</icon>
-    <fullscreen>false</fullscreen>
-    <navbar-hidden>false</navbar-hidden>
-    <analytics>true</analytics>
-    <guid>288259fb-3a02-44bb-9ddd-cebf0f1bd7cb</guid>
-    <property name="ti.ui.defaultunit" type="string">dp</property>
-    <ios>
-        <plist>
-            <dict>
-                <key>NSLocationAlwaysUsageDescription</key>
-                <array>
-                    <string>Please allow the app to access your Location to find XYZ near you.</string>
-                </array>
-                <key>NSLocationWhenInUseUsageDescription</key>
-                <array>
-                    <string>Please allow the app to access your Location to find XYZ near you.</string>
-                </array>
-                <key>UISupportedInterfaceOrientations~iphone</key>
-                <array>
-                    <string>UIInterfaceOrientationPortrait</string>
-                </array>
-                <key>UISupportedInterfaceOrientations~ipad</key>
-                <array>
-                    <string>UIInterfaceOrientationPortrait</string>
-                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
-                    <string>UIInterfaceOrientationLandscapeLeft</string>
-                    <string>UIInterfaceOrientationLandscapeRight</string>
-                </array>
-                <key>UIRequiresPersistentWiFi</key>
-                <false/>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-                <key>UIStatusBarHidden</key>
-                <false/>
-                <key>UIStatusBarStyle</key>
-                <string>UIStatusBarStyleDefault</string>
-            </dict>
-        </plist>
-    </ios>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+<ti:app 
+  xmlns:ti="http://ti.appcelerator.org">
+  <id>com.project3w.moviesearch</id>
+  <name>The Movie Database Search</name>
+  <version>1.0</version>
+  <publisher>Project3W</publisher>
+  <url>http://www.project3w.com</url>
+  <description>Week 3 Initial Build</description>
+  <copyright>2015 by nwharry</copyright>
+  <icon>movie.png</icon>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <analytics>true</analytics>
+  <guid>288259fb-3a02-44bb-9ddd-cebf0f1bd7cb</guid>
+  <property name="ti.ui.defaultunit" type="string">dp</property>
+  <ios>
+    <plist>
+      <dict>
+        <key>NSLocationAlwaysUsageDescription</key>
+        <array>
+          <string>Please allow the app to access your Location to find XYZ near you.</string>
+        </array>
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <array>
+          <string>Please allow the app to access your Location to find XYZ near you.</string>
+        </array>
+        <key>UISupportedInterfaceOrientations~iphone</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+        </array>
+        <key>UISupportedInterfaceOrientations~ipad</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <string>UIInterfaceOrientationPortraitUpsideDown</string>
+          <string>UIInterfaceOrientationLandscapeLeft</string>
+          <string>UIInterfaceOrientationLandscapeRight</string>
+        </array>
+        <key>UIRequiresPersistentWiFi</key>
+        <false/>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+        <key>UIStatusBarHidden</key>
+        <false/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleDefault</string>
+      </dict>
+    </plist>
+  </ios>
+  <android 
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
     <mobileweb>
-        <precache/>
-        <splash>
-            <enabled>true</enabled>
-            <inline-css-images>true</inline-css-images>
-        </splash>
-        <theme>default</theme>
+      <precache/>
+      <splash>
+        <enabled>true</enabled>
+        <inline-css-images>true</inline-css-images>
+      </splash>
+      <theme>default</theme>
     </mobileweb>
     <modules>
-        <module platform="commonjs">ti.cloud</module>
+      <module platform="commonjs">ti.cloud</module>
     </modules>
     <deployment-targets>
-        <target device="android">true</target>
-        <target device="ipad">true</target>
-        <target device="iphone">true</target>
-        <target device="mobileweb">true</target>
+      <target device="android">true</target>
+      <target device="ipad">true</target>
+      <target device="iphone">true</target>
+      <target device="mobileweb">true</target>
     </deployment-targets>
     <sdk-version>4.0.0.GA</sdk-version>
     <property name="appc-app-id" type="string">5578cdd8407457e17f7e85f2</property>
@@ -72,14 +74,14 @@
     <property name="acs-oauth-key-development" type="string">cMzVguYni58Wbv1GWn20eOKja6SUBDts</property>
     <property name="acs-api-key-development" type="string">4mHQzRQpHTnqqMbAayXu3WPYPP2g5jTq</property>
     <property name="acs-username-development" type="string">appc_app_user_dev</property>
-    <property name="acs-password-development" type="string">EnAom9AdbxvgI3sRQm</property>
+    <property name="acs-password-development" type="string">8SKmkrl0DulfHRFNFy</property>
     <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
     <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
     <property name="acs-oauth-secret-production" type="string">etg1Crd6DQszPgOz7z1OYxylYiAsmYeS</property>
     <property name="acs-oauth-key-production" type="string">OxMjY6bJUcb0tIIffN1D1JAYr4vZqeN5</property>
     <property name="acs-api-key-production" type="string">RdpTtJHjhJfVFHWxGXSDb1SF7MNKJpuo</property>
     <property name="acs-username-production" type="string">appc_app_user</property>
-    <property name="acs-password-production" type="string">CjbpBOoWfGlJhKBtSD</property>
+    <property name="acs-password-production" type="string">tZBMfA8h9rVPn2HXhx</property>
     <property name="appc-org-id" type="string">100035825</property>
     <property name="appc-creator-user-id" type="string">2e7bd085-835c-4222-b246-7a79bc929420</property>
-</ti:app>
+  </ti:app>

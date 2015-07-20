@@ -17,7 +17,7 @@
  */
 @protocol TiKeyboardFocusableView
 
-#pragma mark Public WunderlandWeatherApp APIs.
+#pragma mark Public TheMovieDatabaseSearch APIs.
 
 /**
  Tells the view to focus.

@@ -971,8 +971,8 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
 		UIDevice *currentDevice = [UIDevice currentDevice];
 		NSString *currentLocaleIdentifier = [[NSLocale currentLocale] localeIdentifier];
 		NSString *currentDeviceInfo = [NSString stringWithFormat:@"%@/%@; %@; %@;",[currentDevice model],[currentDevice systemVersion],[currentDevice systemName],currentLocaleIdentifier];
-		NSString *kWunderlandWeatherAppUserAgentPrefix = [NSString stringWithFormat:@"%s%s%s %s%s","Appc","eler","ator","Tita","nium"];
-		userAgent = [[NSString stringWithFormat:@"%@/%s (%@)",kWunderlandWeatherAppUserAgentPrefix,TI_VERSION_STR,currentDeviceInfo] retain];
+		NSString *kTheMovieDatabaseSearchUserAgentPrefix = [NSString stringWithFormat:@"%s%s%s %s%s","Appc","eler","ator","Tita","nium"];
+		userAgent = [[NSString stringWithFormat:@"%@/%s (%@)",kTheMovieDatabaseSearchUserAgentPrefix,TI_VERSION_STR,currentDeviceInfo] retain];
 	}
 	return userAgent;
 }
@@ -1123,7 +1123,7 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
             errorString = [error localizedDescription];
         } else {
             // If we have no data...
-            // This should never happen on a WunderlandWeatherApp app using the node.js CLI
+            // This should never happen on a TheMovieDatabaseSearch app using the node.js CLI
             errorString = @"File not found";
         }
         if(errorString != nil) {

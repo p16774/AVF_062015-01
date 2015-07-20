@@ -54,7 +54,7 @@
     NSInteger activeAlertControllerCount;
 }
 
-//WunderlandWeatherApp Support
+//TheMovieDatabaseSearch Support
 -(CGRect)resizeView;
 -(void)repositionSubviews;
 -(UIView *)topWindowProxyView;

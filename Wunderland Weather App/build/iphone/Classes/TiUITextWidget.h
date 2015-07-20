@@ -38,7 +38,7 @@
 -(void)textWidget:(UIView<UITextInputTraits>*)tw didBlurWithText:(NSString *)value;
 -(void)setValue_:(id)text;
 -(void)setSelectionFrom:(id)start to:(id)end;
-#pragma mark - WunderlandWeatherApp Internal Use Only
+#pragma mark - TheMovieDatabaseSearch Internal Use Only
 -(void)updateKeyboardStatus;
 -(NSDictionary*)selectedRange;
 @end

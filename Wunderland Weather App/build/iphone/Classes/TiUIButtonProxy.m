@@ -68,10 +68,10 @@
 {
 	switch((int)styleCache)
 	{
-		case UIWunderlandWeatherAppNativeItemInfoLight:
-		case UIWunderlandWeatherAppNativeItemInfoDark:
+		case UITheMovieDatabaseSearchNativeItemInfoLight:
+		case UITheMovieDatabaseSearchNativeItemInfoDark:
 			return 18;
-		case UIWunderlandWeatherAppNativeItemDisclosure:
+		case UITheMovieDatabaseSearchNativeItemDisclosure:
 			return 29;
 		default: {
 			break;
@@ -84,10 +84,10 @@
 {
 	switch((int)styleCache)
 	{
-		case UIWunderlandWeatherAppNativeItemInfoLight:
-		case UIWunderlandWeatherAppNativeItemInfoDark:
+		case UITheMovieDatabaseSearchNativeItemInfoLight:
+		case UITheMovieDatabaseSearchNativeItemInfoDark:
 			return 19;
-		case UIWunderlandWeatherAppNativeItemDisclosure:
+		case UITheMovieDatabaseSearchNativeItemDisclosure:
 			return 31;
 		default: {
 			break;
@@ -101,9 +101,9 @@
 {
 	switch ((int)styleCache)
 	{
-		case UIWunderlandWeatherAppNativeItemInfoLight:
-		case UIWunderlandWeatherAppNativeItemInfoDark:
-		case UIWunderlandWeatherAppNativeItemDisclosure:
+		case UITheMovieDatabaseSearchNativeItemInfoLight:
+		case UITheMovieDatabaseSearchNativeItemInfoDark:
+		case UITheMovieDatabaseSearchNativeItemDisclosure:
 			return suggestedResizing & ~(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 		default: {
 			break;
