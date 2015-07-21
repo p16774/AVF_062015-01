@@ -44,11 +44,13 @@ exports.getMovie = function() {
 					+ "Language: " + movieInfo.language + "\n"
 					+ "Release Date: " + movieInfo.date + "\n"
 					+ "Genre: " + movieInfo.genre + "\n\n"
-					+ "Overview: " + movieInfo.overview	+ "\n"
+					+ "Overview: " + movieInfo.overview	
 			});
 			
 			moviePoster = Ti.UI.createImageView({
-				image: movieInfo.base + movieInfo.poster
+				image: movieInfo.base + movieInfo.poster,
+				//borderWidth: 3,
+				//borderColor: "#000"
 			});
 			
 			

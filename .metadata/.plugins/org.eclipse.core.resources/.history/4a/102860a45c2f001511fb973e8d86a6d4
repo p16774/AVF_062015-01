@@ -31,7 +31,7 @@
 	
 	exports.logoView = Ti.UI.createView({
 		bottom: 10,
-		height: Ti.UI.FILL
+		height: 50
 	});     
 	 
 			        

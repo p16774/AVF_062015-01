@@ -7,7 +7,6 @@
 
 // create window
 var win = Ti.UI.createWindow({
-	height: Ti.UI.Fill,
 	backgroundColor: '#ffffff',
 	fullscreen: false,
 	layout: 'vertical'

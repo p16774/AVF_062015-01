@@ -40,23 +40,25 @@ exports.getMovie = function() {
 				//top: -50,
 				left: 10,
 				right: 10,
-				text: "\nTitle: " + movieInfo.title + "\n"
+				text: "Title: " + movieInfo.title + "\n"
 					+ "Language: " + movieInfo.language + "\n"
 					+ "Release Date: " + movieInfo.date + "\n"
 					+ "Genre: " + movieInfo.genre + "\n\n"
-					+ "Overview: " + movieInfo.overview	+ "\n"
+					+ "Overview: " + movieInfo.overview	
 			});
 			
-			moviePoster = Ti.UI.createImageView({
-				image: movieInfo.base + movieInfo.poster
-			});
+			/*moviePoster = Ti.UI.createImageView({
+				image: movieData.base + movieData.poster,
+				//borderWidth: 3,
+				//borderColor: "#000"
+			});*/
 			
 			
 			// add the elements to the display
 			displayElements.cityView.add(movieGenre);
 			displayElements.dataView.add(movieTitle);
 			displayElements.dataView.add(movieData);
-			displayElements.logoView.add(moviePoster);
+			//displayElements.logoView.add(moviePoster);
 			displayElements.fullView.add(displayElements.list);
 			displayElements.fullView.add(displayElements.dataView);
 			

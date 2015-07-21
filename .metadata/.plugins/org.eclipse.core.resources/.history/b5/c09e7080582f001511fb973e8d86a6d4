@@ -3,94 +3,119 @@
 exports.getMovie = function() {
 	
 		
-		var buildUI = function(results) {
+		/*var buildUI = function(results) {
 			
-			// parse our string back into an object
-			var movieInfo = JSON.parse(results);
+			var currentConditions = JSON.parse(results);
 			
-			
-			// logic check - comment out for production
-			//console.log(movieInfo);
-			
+			// console.log("This is the results object " + currentConditions);
 					
 			// require our display elements
 			var	displayElements = require("display");
-	        
-	        // place values into the app page after data pulled
-	        movieGenre = Ti.UI.createLabel({
-			  color: '#900',
-			  font: { fontSize:48 },
-			  shadowColor: '#aaa',
-			  shadowOffset: {x:3, y:3},
-			  shadowRadius: 2,
-			  text: movieInfo['genre'],
-			  //textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-			  top: 30,
-			  width: Ti.UI.SIZE, 
-			  //height: Ti.UI.SIZE
-			});
-			
-			movieTitle = Ti.UI.createLabel({
-				top: 0,
-				text: movieInfo['title']
+		
 				
-			});
+				// retrieve old data and parse it out
+				//var currentConditions = JSON.parse(Ti.App.Properties.getString('oldData'));
+				
+				//console.log(currentConditions);
 			
-			movieData = Ti.UI.createLabel({
-				//top: -50,
-				left: 10,
-				right: 10,
-				text: "\nTitle: " + movieInfo.title + "\n"
-					+ "Language: " + movieInfo.language + "\n"
-					+ "Release Date: " + movieInfo.date + "\n"
-					+ "Genre: " + movieInfo.genre + "\n\n"
-					+ "Overview: " + movieInfo.overview	+ "\n"
-			});
-			
-			moviePoster = Ti.UI.createImageView({
-				image: movieInfo.base + movieInfo.poster
-			});
-			
-			
-			// add the elements to the display
-			displayElements.cityView.add(movieGenre);
-			displayElements.dataView.add(movieTitle);
-			displayElements.dataView.add(movieData);
-			displayElements.logoView.add(moviePoster);
-			displayElements.fullView.add(displayElements.list);
-			displayElements.fullView.add(displayElements.dataView);
-			
+		        // create link to forecast site
+		        var forecastLink = Ti.UI.createLabel ({
+		        	text: "Click for Full Forecast"
+		        });
+		        
+		        
+		        displayElements.logo.addEventListener ('click', function(e) {
+		        	// link should open in safari
+		        	Ti.Platform.openURL(currentConditions['forecastURL']);
+		        });
+		        
+		        // place values into the app page after data pulled
+		        geoCity = Ti.UI.createLabel({
+				  color: '#900',
+				  font: { fontSize:48 },
+				  shadowColor: '#aaa',
+				  shadowOffset: {x:3, y:3},
+				  shadowRadius: 2,
+				  text: currentConditions['full'],
+				  //textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+				  top: 30,
+				  width: Ti.UI.SIZE, 
+				  //height: Ti.UI.SIZE
+				});
+				
+				geoDate = Ti.UI.createLabel({
+					top: 0,
+					text: currentConditions['pullTime']
+					
+				});
+				
+				geoData = Ti.UI.createLabel({
+					//top: -50,
+					left: 10,
+					right: 10,
+					text: "Current Temp: " + currentConditions['tempfDisplay'] + "\xB0F/"
+						+ currentConditions['tempcDisplay'] + "\xB0C\n" 
+						+ "Humidity: " + currentConditions['humidity'] + "\n"
+						+ currentConditions['currentWeather'] + "\n"
+						+ "Visibility: " + currentConditions['visibility'] + " miles\n"
+						+ "Winds out of the " + currentConditions['windDir'] + " at "
+						+ currentConditions['windSpeed'] + " mph with gusts up to "
+						+ currentConditions['windGust'] + " mph\n\n"
+					
+					 
+					//textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+					
+					
+					
+				});
+				
+				// currentConditions icon
+				geoImage = Ti.UI.createImageView ({
+					image: currentConditions['iconImage']
+					
+					
+				});
+				
+				// add the elements to the display
+				displayElements.cityView.add(geoCity);
+				displayElements.dataView.add(geoDate);
+				displayElements.dataView.add(geoImage);
+				displayElements.dataView.add(geoData);
+				displayElements.dataView.add(forecastLink);
+				displayElements.logoView.add(displayElements.logo);
+				displayElements.fullView.add(displayElements.list);
+				displayElements.fullView.add(displayElements.dataView);
+				
 
+				
+				// add views to the window
+				win.add(displayElements.cityView);
+				displayElements.fullView.add(displayElements.dataView);
+				displayElements.fullView.add(displayElements.logoView);
+				win.add(displayElements.fullView);
+				//win.add(displayElements.logoView);
 			
-			// add views to the window
-			win.add(displayElements.cityView);
-			displayElements.fullView.add(displayElements.dataView);
-			displayElements.fullView.add(displayElements.logoView);
-			win.add(displayElements.fullView);
-			//win.add(displayElements.logoView);
 			
-			
-		};
+		};*/
 		
 		var read = function() {
 			
 			// pull all data
 			var movieDB = Ti.Database.open('movies');
-			var movieRead = movieDB.execute("SELECT * FROM randomMovie");
+			var geoResults = movieDB.execute("SELECT * FROM randomMovie");
 			
 			
 			// logic check - comment out for production
-			//console.log("This is the rowCount " + movieRead.rowCount);
+			console.log("This is the rowCount " + geoResults.rowCount);
 			
-			
-			while (movieRead.isValidRow()) {
+			/*while (geoResults.isValidRow()) {
 				
-				buildUI(movieRead.fieldByName('movie'));
-				movieRead.next();
+				buildUI(geoResults.fieldByName('conditions'));
+				geoResults.next();
 				
-			};
+			};*/
 			
-			movieRead.close();
+			geoResults.close();
 			movieDB.close();
 			
 		};
@@ -128,7 +153,7 @@ exports.getMovie = function() {
 		var conditionObject;
 		
 		// pull the genre ids
-		var searchURL = "http://api.themoviedb.org/3/genre/movie/list?api_key=d18ca777adaacbbb6cf589285c402ed7";
+		var searchURL = "https://api.themoviedb.org/3/genre/movie/list?api_key=d18ca777adaacbbb6cf589285c402ed7";
 		var pulledGenre = {};
 		var getMovies = Ti.Network.createHTTPClient();
 		
@@ -151,7 +176,7 @@ exports.getMovie = function() {
 	        	name: genreName
 	        };
 						
-			var movieURL = "http://api.themoviedb.org/3/discover/movie?api_key=d18ca777adaacbbb6cf589285c402ed7&with_genres=" + pulledGenre.id;	
+			var movieURL = "https://api.themoviedb.org/3/discover/movie?api_key=d18ca777adaacbbb6cf589285c402ed7&with_genres=" + pulledGenre.id;	
 			
 			var getData = Ti.Network.createHTTPClient();
 			
@@ -164,10 +189,7 @@ exports.getMovie = function() {
 		        var movieResult = Math.floor(Math.random() * movieLength) + 0;
 		        var movieName = movieData.results[movieResult].original_title;
 		        
-		        
-		        // logic check - comment out for production
-		        //console.log(movieData.results[movieResult]);
-		        
+		        console.log(movieData.results[movieResult]);
 		        
 		        // set variables from API response
 		        var movieData = {

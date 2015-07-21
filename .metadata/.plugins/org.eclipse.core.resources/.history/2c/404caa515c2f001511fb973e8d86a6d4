@@ -44,19 +44,23 @@ exports.getMovie = function() {
 					+ "Language: " + movieInfo.language + "\n"
 					+ "Release Date: " + movieInfo.date + "\n"
 					+ "Genre: " + movieInfo.genre + "\n\n"
-					+ "Overview: " + movieInfo.overview	+ "\n"
+					+ "Overview: " + movieInfo.overview	
 			});
 			
-			moviePoster = Ti.UI.createImageView({
-				image: movieInfo.base + movieInfo.poster
-			});
+			/*moviePoster = Ti.UI.createImageView({
+				image: movieData.base + movieData.poster,
+				//borderWidth: 3,
+				//borderColor: "#000"
+			});*/
+			
+			console.log(movieData.base + movieData.poster);
 			
 			
 			// add the elements to the display
 			displayElements.cityView.add(movieGenre);
 			displayElements.dataView.add(movieTitle);
 			displayElements.dataView.add(movieData);
-			displayElements.logoView.add(moviePoster);
+			//displayElements.logoView.add(moviePoster);
 			displayElements.fullView.add(displayElements.list);
 			displayElements.fullView.add(displayElements.dataView);
 			

@@ -1,5 +1,5 @@
 
-Sun Jul 19 2015 17:32:03 GMT-0500 (CDT)
+Mon Jul 20 2015 22:54:23 GMT-0500 (CDT)
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.0.0.GA --project-dir /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App --target simulator --ios-version 8.4 --device-family universal --sim-type iphone --sim-version 8.4 --device-id 7B1B30CB-8E34-4366-A78A-511B252EECEB --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51475 --username nobrakes@fullsail.edu --password L@unchB0x --plugin-paths /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules --config-file /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/build-1437345120651.json --no-banner
+  /usr/local/bin/node /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.0.0.GA --project-dir /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App --target simulator --ios-version 8.4 --device-family universal --sim-type iphone --sim-version 8.4 --device-id 7B1B30CB-8E34-4366-A78A-511B252EECEB --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51475 --username nobrakes@fullsail.edu --password L@unchB0x --plugin-paths /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules --config-file /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/build-1437450860343.json --no-banner
 
 [DEBUG]  Detecting modules in /Users/nwharry/Library/Application Support/Titanium/modules
 [DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/nwharry/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
@@ -88,15 +88,15 @@ Command
 [INFO]   Processing Titanium namespace resources
 [DEBUG]  Copying /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/iphone/modules/ui/images => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/modules/ui/images
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 285ms
+[INFO]   Finished building the application in 266ms
 [INFO]   Launching iOS Simulator
-[DEBUG]  [ioslib] Removing old log file: /Users/nwharry/Library/Developer/CoreSimulator/Devices/7B1B30CB-8E34-4366-A78A-511B252EECEB/data/Containers/Data/Application/533C1D8D-D019-42F7-9AE3-4BE1BC305144/Documents/288259fb-3a02-44bb-9ddd-cebf0f1bd7cb.log
+[DEBUG]  [ioslib] Removing old log file: /Users/nwharry/Library/Developer/CoreSimulator/Devices/7B1B30CB-8E34-4366-A78A-511B252EECEB/data/Containers/Data/Application/646925DE-8594-4AD1-BE3F-790F72E1029D/Documents/288259fb-3a02-44bb-9ddd-cebf0f1bd7cb.log
 [DEBUG]  [ioslib] Executing: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/node_modules/ioslib/lib/ios-sim "launch" "/Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app" "--verbose" "--xcode-dir" "/Applications/Xcode.app/Contents/Developer" "--udid" "7B1B30CB-8E34-4366-A78A-511B252EECEB" "--timeout" "180"
 [DEBUG]  [ioslib] Executing: osascript "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/node_modules/ioslib/lib/iphone_sim_activate.scpt" "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app"
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7fcc1a044410> specified by app path /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7fcc1a303e70> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T//ios-sim-stderr-pipe-1437345124'
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T//ios-sim-stdout-pipe-1437345124'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7fce11c1b560> specified by app path /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7fce11d1eb80> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T//ios-sim-stderr-pipe-1437450863'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T//ios-sim-stdout-pipe-1437450863'
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] using device family iphone
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 52755AC6-5ED7-4C62-A1F8-5AED76D628DC == 7B1B30CB-8E34-4366-A78A-511B252EECEB
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing F8FCEF4C-D102-4D9A-9F70-739262CADF9B == 7B1B30CB-8E34-4366-A78A-511B252EECEB
@@ -105,5 +105,5 @@ Command
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 7B1B30CB-8E34-4366-A78A-511B252EECEB == 7B1B30CB-8E34-4366-A78A-511B252EECEB
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] set device to : iPhone 6
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Session started
-[DEBUG]  [ioslib] Found application log file: /Users/nwharry/Library/Developer/CoreSimulator/Devices/7B1B30CB-8E34-4366-A78A-511B252EECEB/data/Containers/Data/Application/26EABB20-37D1-4DB0-9D40-C12CBEE1DD50/Documents/288259fb-3a02-44bb-9ddd-cebf0f1bd7cb.log
-[INFO]   Project built successfully in 6s 489ms
+[DEBUG]  [ioslib] Found application log file: /Users/nwharry/Library/Developer/CoreSimulator/Devices/7B1B30CB-8E34-4366-A78A-511B252EECEB/data/Containers/Data/Application/A4E60102-723B-4C44-8AAB-DD88D7046B1E/Documents/288259fb-3a02-44bb-9ddd-cebf0f1bd7cb.log
+[INFO]   Project built successfully in 4s 175ms
