@@ -7,21 +7,20 @@
 
 // create window
 var win = Ti.UI.createWindow({
-	height: Ti.UI.Fill,
+	height: Ti.UI.FILL,
 	backgroundColor: '#ffffff',
-	fullscreen: false,
 	layout: 'vertical'
 });
 
 
 // check network and run geo functions
 if (Ti.Network.online) {
-	
+
 	// require our geo elements	
-	var movieSearch = require("search");
+	var geoElements = require("geo");
 	
 	// run our geo function
-	movieSearch.getMovie();
+	geoElements.getLocation();
 	
 	
 } else {

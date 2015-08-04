@@ -7,8 +7,8 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-#ifndef TheMovieDatabaseSearch_ThirdpartyNS_h
-#define TheMovieDatabaseSearch_ThirdpartyNS_h
+#ifndef WunderlandWeatherApp_ThirdpartyNS_h
+#define WunderlandWeatherApp_ThirdpartyNS_h
 
 #ifndef __TI_NAMESPACE_PREFIX_
 #define __TI_NAMESPACE_PREFIX_	TI

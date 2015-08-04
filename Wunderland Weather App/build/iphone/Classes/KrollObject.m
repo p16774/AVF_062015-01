@@ -302,10 +302,10 @@ bool KrollSetProperty(TiContextRef jsContext, TiObjectRef object, TiStringRef pr
 
 // forward declare these
 
-//@interface TheMovieDatabaseSearchObject : NSObject
+//@interface WunderlandWeatherAppObject : NSObject
 //@end
 
-@interface TheMovieDatabaseSearchObject (Private)
+@interface WunderlandWeatherAppObject (Private)
 -(NSDictionary*)modules;
 @end
 
@@ -323,9 +323,9 @@ void KrollPropertyNames(TiContextRef ctx, TiObjectRef object, TiPropertyNameAccu
 	{
 		id target = [o target];
 		
-		if ([o isKindOfClass:[TheMovieDatabaseSearchObject class]])
+		if ([o isKindOfClass:[WunderlandWeatherAppObject class]])
 		{
-			for (NSString *key in [[(TheMovieDatabaseSearchObject*)o modules] allKeys])
+			for (NSString *key in [[(WunderlandWeatherAppObject*)o modules] allKeys])
 			{
 				TiStringRef value = TiStringCreateWithUTF8CString([key UTF8String]);
 				TiPropertyNameAccumulatorAddName(propertyNames,value);

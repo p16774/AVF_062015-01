@@ -39,7 +39,7 @@ typedef enum {
 } EncodingError;
 
 /**
- TheMovieDatabaseSearch orientation flags.
+ WunderlandWeatherApp orientation flags.
  */
 typedef enum
 {

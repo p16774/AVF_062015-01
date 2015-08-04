@@ -60,7 +60,7 @@ extern "C" {
 	#define KMETHOD_DEBUG MEMORY_DEBUG
 #endif
 
-// in simulator we redefine to format for TheMovieDatabaseSearch Developer console
+// in simulator we redefine to format for WunderlandWeatherApp Developer console
 
 
 #define TI_INLINE static __inline__
@@ -309,13 +309,13 @@ void TiExceptionThrowWithNameAndReason(NSString *exceptionName, NSString *reason
 #define DEFINE_EXCEPTIONS \
 - (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = [@"org.themoviedatabasesearch." stringByAppendingString:NSStringFromClass([self class])];\
+	NSString * exceptionName = [@"org.wunderlandweatherapp." stringByAppendingString:NSStringFromClass([self class])];\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 \
 + (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = @"org.themoviedatabasesearch";\
+	NSString * exceptionName = @"org.wunderlandweatherapp";\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 
@@ -426,28 +426,28 @@ DebugLog(@"[WARN] Ti%@.%@ DEPRECATED in %@, in favor of %@.",@"tanium",api,in,ne
 
  //MUST BE NEGATIVE, as it inhabits the same space as UIBarButtonSystemItem
 enum {
-	UITheMovieDatabaseSearchNativeItemNone = -1, 
-	UITheMovieDatabaseSearchNativeItemSpinner = -2,
-	UITheMovieDatabaseSearchNativeItemProgressBar = -3,
+	UIWunderlandWeatherAppNativeItemNone = -1, 
+	UIWunderlandWeatherAppNativeItemSpinner = -2,
+	UIWunderlandWeatherAppNativeItemProgressBar = -3,
 	
-	UITheMovieDatabaseSearchNativeItemSlider = -4,
-	UITheMovieDatabaseSearchNativeItemSwitch = -5,
-	UITheMovieDatabaseSearchNativeItemMultiButton = -6,
-	UITheMovieDatabaseSearchNativeItemSegmented = -7,
+	UIWunderlandWeatherAppNativeItemSlider = -4,
+	UIWunderlandWeatherAppNativeItemSwitch = -5,
+	UIWunderlandWeatherAppNativeItemMultiButton = -6,
+	UIWunderlandWeatherAppNativeItemSegmented = -7,
 	
-	UITheMovieDatabaseSearchNativeItemTextView = -8,
-	UITheMovieDatabaseSearchNativeItemTextField = -9,
-	UITheMovieDatabaseSearchNativeItemSearchBar = -10,
+	UIWunderlandWeatherAppNativeItemTextView = -8,
+	UIWunderlandWeatherAppNativeItemTextField = -9,
+	UIWunderlandWeatherAppNativeItemSearchBar = -10,
 	
-	UITheMovieDatabaseSearchNativeItemPicker = -11,
-	UITheMovieDatabaseSearchNativeItemDatePicker = -12,
+	UIWunderlandWeatherAppNativeItemPicker = -11,
+	UIWunderlandWeatherAppNativeItemDatePicker = -12,
 	
-	UITheMovieDatabaseSearchNativeItemInfoLight = -13,
-	UITheMovieDatabaseSearchNativeItemInfoDark = -14,
+	UIWunderlandWeatherAppNativeItemInfoLight = -13,
+	UIWunderlandWeatherAppNativeItemInfoDark = -14,
 	
-	UITheMovieDatabaseSearchNativeItemDisclosure = -15,
+	UIWunderlandWeatherAppNativeItemDisclosure = -15,
 	
-	UITheMovieDatabaseSearchNativeItemContactAdd = -16
+	UIWunderlandWeatherAppNativeItemContactAdd = -16
 };
 
 
@@ -628,7 +628,7 @@ void incrementKrollCounter();
 void decrementKrollCounter();
     
 /**
- *	TiThreadPerformOnMainThread should replace all TheMovieDatabaseSearch instances of
+ *	TiThreadPerformOnMainThread should replace all WunderlandWeatherApp instances of
  *	performSelectorOnMainThread, ESPECIALLY if wait is to be yes. That way,
  *	exceptional-case main thread activities can process them outside of the
  *	standard event loop.

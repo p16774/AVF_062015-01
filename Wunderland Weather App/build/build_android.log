@@ -1,0 +1,559 @@
+
+Mon Jul 13 2015 21:56:12 GMT-0500 (CDT)
+
+Operating System
+  Name                        = Mac OS X
+  Version                     = 10.10.3
+  Architecture                = 64bit
+  # CPUs                      = 8
+  Memory                      = 8589934592
+
+Node.js
+  Node.js Version             = 0.10.37
+  npm Version                 = 1.4.28
+
+Titanium CLI
+  CLI Version                 = 4.0.1
+
+Titanium SDK
+  SDK Version                 = 4.0.0.GA
+  SDK Path                    = /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA
+  Target Platform             = android
+
+Command
+  /usr/local/bin/node /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform android --log-level trace --sdk 4.0.0.GA --project-dir /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App --target emulator --android-sdk /Users/nwharry/Library/Android/sdk --device-id HTC One - Android 4.4.4 HD --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 56497 --plugin-paths /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules --config-file /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/build-1436842567000.json --no-banner
+
+[DEBUG]  Detecting modules in /Users/nwharry/Library/Application Support/Titanium/modules
+[DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/nwharry/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected android module: facebook 4.0.3 @ /Users/nwharry/Library/Application Support/Titanium/modules/android/facebook/4.0.3
+[DEBUG]  Detected android module: facebook 4.0.5 @ /Users/nwharry/Library/Application Support/Titanium/modules/android/facebook/4.0.5
+[DEBUG]  Detected android module: ti.cloudpush 3.3.8 @ /Users/nwharry/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.8
+[DEBUG]  Detected android module: ti.map 2.3.0 @ /Users/nwharry/Library/Application Support/Titanium/modules/android/ti.map/2.3.0
+[DEBUG]  Detected android module: ti.map 2.3.1 @ /Users/nwharry/Library/Application Support/Titanium/modules/android/ti.map/2.3.1
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.8 @ /Users/nwharry/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.8
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.9 @ /Users/nwharry/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9
+[DEBUG]  Detected iphone module: com.appcelerator.apm 1.1.1 @ /Users/nwharry/Library/Application Support/Titanium/modules/iphone/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.1.1 @ /Users/nwharry/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.1.1
+[DEBUG]  Detected iphone module: facebook 4.0.3 @ /Users/nwharry/Library/Application Support/Titanium/modules/iphone/facebook/4.0.3
+[DEBUG]  Detected iphone module: facebook 4.0.5 @ /Users/nwharry/Library/Application Support/Titanium/modules/iphone/facebook/4.0.5
+[DEBUG]  Detected iphone module: ti.coremotion 1.1.0 @ /Users/nwharry/Library/Application Support/Titanium/modules/iphone/ti.coremotion/1.1.0
+[DEBUG]  Detected iphone module: ti.map 2.2.2 @ /Users/nwharry/Library/Application Support/Titanium/modules/iphone/ti.map/2.2.2
+[DEBUG]  Detected iphone module: ti.map 2.3.1 @ /Users/nwharry/Library/Application Support/Titanium/modules/iphone/ti.map/2.3.1
+[DEBUG]  Detected iphone module: ti.touchid 1.1.0 @ /Users/nwharry/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.1.0
+[DEBUG]  Looking for Titanium module id=ti.cloud version=latest platform=commonjs deploy-type=development
+[INFO]   Found Titanium module id=ti.cloud version=3.2.9 platform=commonjs deploy-type=development path=/Users/nwharry/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9
+[DEBUG]  No project level plugins to load
+[DEBUG]  Titanium SDK Android directory: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android
+[INFO]   Deploy type: development
+[INFO]   Building for target: emulator
+[INFO]   Building for emulator: HTC One - Android 4.4.4 HD
+[INFO]   Targeting Android SDK: 21
+[INFO]   Building for the following architectures: armeabi, armeabi-v7a, x86
+[INFO]   Signing with keystore: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/dev_keystore (tidev)
+[DEBUG]  App ID: com.project3w.weatherapp
+[DEBUG]  Classname: WunderlandWeatherApp
+[INFO]   Debugging disabled
+[INFO]   Profiler disabled
+[INFO]   Forcing rebuild: tiapp.xml url changed since last build
+[INFO]     Was: http://
+[INFO]     Now: http://www.project3w.com
+[INFO]   Launching emulator: HTC One - Android 4.4.4 HD
+[TRACE]  Starting emulator: HTC One - Android 4.4.4 HD
+[TRACE]  Checking if emulator HTC One - Android 4.4.4 HD is running...
+[TRACE]  Detecting if HTC One - Android 4.4.4 HD exists...
+[TRACE]  Found 2 emulators
+[TRACE]  Emulator exists, detecting all running emulators and connected devices...
+[TRACE]  Detected 0 running emulators and connected devices
+[TRACE]  Emulator not running, detecting running emulators
+[TRACE]  Found 2 emulators
+[TRACE]  Starting the emulator...
+[INFO]   Running: /Applications/Genymotion.app/Contents/MacOS/player --vm-name "HTC One - Android 4.4.4 HD"
+[TRACE]  Emulator is starting, monitoring boot state...
+[TRACE]  Checking the boot state for the next 240000 ms
+[TRACE]  Waiting for emulator to register with ADB
+[TRACE]  Emulator process started
+[WARN]   Overwriting file /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/KS_nav_ui.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/KS_nav_ui.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/KS_nav_ui.png
+[WARN]   Overwriting file /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/KS_nav_views.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/KS_nav_views.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/KS_nav_views.png
+[DEBUG]  Ignoring /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android
+[DEBUG]  Ignoring /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone
+[DEBUG]  Ignoring /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/mobileweb
+[WARN]   Overwriting file /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/appicon.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/appicon.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/appicon.png
+[TRACE]  No devices found, continuing to wait
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-long-land-hdpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-long-land-hdpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-long-land-ldpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-long-land-ldpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-long-port-hdpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-long-port-hdpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-long-port-ldpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-long-port-ldpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-notlong-land-hdpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-notlong-land-hdpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-notlong-land-ldpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-notlong-land-ldpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-notlong-land-mdpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-notlong-land-mdpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-notlong-port-hdpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-notlong-port-hdpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-notlong-port-ldpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-notlong-port-ldpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android/images/res-notlong-port-mdpi/default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/appicon.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/drawable/appicon.png
+[INFO]   Processing JavaScript files
+[WARN]   Overwriting file /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/app.js
+[DEBUG]  Symlinking /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/liveview.js => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/app.js
+[WARN]   Overwriting file /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/display.js
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/display.js => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/display.js
+[WARN]   Overwriting file /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/geo.js
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/geo.js => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/geo.js
+[WARN]   Overwriting file /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/ti.cloud.js
+[DEBUG]  Symlinking /Users/nwharry/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9/ti.cloud.js => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/Resources/ti.cloud.js
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/kroll-v8.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-analytics.jar
+[DEBUG]  Adding dependency library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/aps-analytics.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-android.jar
+[DEBUG]  Adding dependency library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/jaxen-1.1.1.jar
+[DEBUG]  Adding dependency library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/ti-commons-codec-1.3.jar
+[DEBUG]  Adding dependency library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/kroll-common.jar
+[DEBUG]  Adding dependency library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/titanium.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-app.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-ui.jar
+[DEBUG]  Adding dependency library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/nineoldandroids-appc-2.4.0.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-filesystem.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-media.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-appcompat.jar
+[DEBUG]  Adding dependency library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/android-support-v4.jar
+[DEBUG]  Adding dependency library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/android-support-v7-appcompat.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-locale.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-network.jar
+[DEBUG]  Adding dependency library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/thirdparty.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-xml.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-utils.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-geolocation.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-accelerometer.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-contacts.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-map.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-gesture.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-calendar.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-platform.jar
+[DEBUG]  Adding library /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-database.jar
+[DEBUG]  Unknown namespace stream, skipping
+[DEBUG]  Unknown namespace api, skipping
+[DEBUG]  Unknown namespace app.deploytype, skipping
+[DEBUG]  Unknown namespace ui.ios, skipping
+[INFO]   Writing /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets/app.json
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-analytics.res.zip
+[DEBUG]  Copying /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-1p2zudi/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-android.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-jmakjp/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-app.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-1nqalh1/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-filesystem.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-74t9vh/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-media.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-1hpbvxa/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-locale.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-1bzcbxx/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-network.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-xt4rme/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-xml.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-knk9y6/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-utils.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-r96dm/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-geolocation.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-oz79d7/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-accelerometer.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-ta299q/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-contacts.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-v3w7oo/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-map.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-cq99ut/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-gesture.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-yt3q95/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-calendar.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-1qgvb16/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-platform.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-1781d8i/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Extracting module resources: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-database.res.zip
+[DEBUG]  Merging /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-sp1xnb/res/values/strings.xml => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[DEBUG]  Removing old file: /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/AndroidManifest.xml
+[DEBUG]  Copying template /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/templates/build/AppInfo.java => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/com/project3w/weatherapp/WunderlandWeatherAppAppInfo.java
+[DEBUG]  Copying template /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/templates/build/App.java => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/com/project3w/weatherapp/WunderlandWeatherAppApplication.java
+[DEBUG]  Copying template /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/templates/build/Activity.java => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/com/project3w/weatherapp/WunderlandWeatherAppActivity.java
+[DEBUG]  Copying template /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/templates/build/project => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/.project
+[DEBUG]  Copying template /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/templates/build/default.properties => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/default.properties
+[DEBUG]  Copying /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/templates/build/gitignore => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/.gitignore
+[DEBUG]  Copying /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/templates/build/classpath => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/.classpath
+[INFO]   No aidl files to compile, continuing
+[INFO]   Generating i18n files
+[DEBUG]  Merging en strings => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/strings.xml
+[INFO]   Generating /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res/values/theme.xml
+[INFO]   Packaging application: /Users/nwharry/Library/Android/sdk/build-tools/21.1.2/aapt "package" "-f" "-m" "-J" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen" "-M" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/AndroidManifest.xml" "-A" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/assets" "-S" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/res" "-I" "/Users/nwharry/Library/Android/sdk/platforms/android-21/android.jar" "-F" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/app.ap_" "--auto-add-overlay" "--extra-packages" "ti.modules.titanium.ui:android.support.v7.appcompat" "-S" "/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-1eje34f/res" "-S" "/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/115613-23822-1nzgsl2/res"
+[INFO]   Building Java source files: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/javac "-J-Xmx256M" "-encoding" "utf8" "-bootclasspath" "/Users/nwharry/Library/Android/sdk/platforms/android-21/android.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/kroll-v8.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-analytics.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/aps-analytics.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-android.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/jaxen-1.1.1.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/ti-commons-codec-1.3.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/kroll-common.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/titanium.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-app.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-ui.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/nineoldandroids-appc-2.4.0.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-filesystem.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-media.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-appcompat.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/android-support-v4.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/android-support-v7-appcompat.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-locale.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-network.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/thirdparty.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-xml.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-utils.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-geolocation.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-accelerometer.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-contacts.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-map.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-gesture.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-calendar.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-platform.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-database.jar:/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/lib/titanium-verify.jar:R.class:ApplicationStylesheet.class:WunderlandWeatherAppActivity.class:WunderlandWeatherAppAppInfo.class:WunderlandWeatherAppApplication.class" "-d" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/classes" "-proc:none" "-target" "1.6" "-source" "1.6" "@/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/java-sources.txt"
+[INFO]   Running dexer: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/java "-Xmx1024M" "-XX:-UseGCOverheadLimit" "-Djava.ext.dirs=/Users/nwharry/Library/Android/sdk/platform-tools" "-jar" "/Users/nwharry/Library/Android/sdk/build-tools/21.1.2/lib/dx.jar" "--dex" "--output=/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/classes.dex" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/classes" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/lib/titanium-verify.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/kroll-v8.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-analytics.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/aps-analytics.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-android.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/jaxen-1.1.1.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/ti-commons-codec-1.3.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/kroll-common.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/titanium.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-app.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-ui.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/nineoldandroids-appc-2.4.0.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-filesystem.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-media.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-appcompat.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/android-support-v4.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/android-support-v7-appcompat.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-locale.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-network.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/thirdparty.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-xml.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-utils.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-geolocation.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-accelerometer.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-contacts.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-map.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-gesture.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-calendar.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-platform.jar" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-database.jar"
+[TRACE]  Found 1 devices, checking if any of them are the emulator...
+[TRACE]  Emulator is running!
+[TRACE]  Checking if boot animation has finished...
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[INFO]   Creating unsigned apk
+[DEBUG]  Processing /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/app.ap_
+[DEBUG]  Deflating AndroidManifest.xml
+[DEBUG]  Adding assets/Resources/KS_nav_ui.png
+[DEBUG]  Adding assets/Resources/KS_nav_views.png
+[DEBUG]  Deflating assets/Resources/_app_props_.json
+[DEBUG]  Deflating assets/Resources/app.js
+[DEBUG]  Adding assets/Resources/appicon.png
+[DEBUG]  Deflating assets/Resources/display.js
+[DEBUG]  Deflating assets/Resources/geo.js
+[DEBUG]  Deflating assets/Resources/ti.cloud.js
+[DEBUG]  Deflating assets/app.json
+[DEBUG]  Deflating assets/index.json
+[DEBUG]  Deflating res/anim/abc_fade_in.xml
+[DEBUG]  Deflating res/anim/abc_fade_out.xml
+[DEBUG]  Deflating res/anim/abc_slide_in_bottom.xml
+[DEBUG]  Deflating res/anim/abc_slide_in_top.xml
+[DEBUG]  Deflating res/anim/abc_slide_out_bottom.xml
+[DEBUG]  Deflating res/anim/abc_slide_out_top.xml
+[DEBUG]  Deflating res/color/abc_background_cache_hint_selector_material_dark.xml
+[DEBUG]  Deflating res/color/abc_background_cache_hint_selector_material_light.xml
+[DEBUG]  Deflating res/color/abc_primary_text_disable_only_material_dark.xml
+[DEBUG]  Deflating res/color/abc_primary_text_disable_only_material_light.xml
+[DEBUG]  Deflating res/color/abc_primary_text_material_dark.xml
+[DEBUG]  Deflating res/color/abc_primary_text_material_light.xml
+[DEBUG]  Deflating res/color/abc_search_url_text.xml
+[DEBUG]  Deflating res/color/abc_secondary_text_material_dark.xml
+[DEBUG]  Deflating res/color/abc_secondary_text_material_light.xml
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ab_share_pack_holo_dark.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ab_share_pack_holo_light.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_focused_holo.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-mdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-xhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-xxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-ldrtl-xxxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-ldrtl-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-long-land-hdpi-v4/background.png
+[DEBUG]  Adding res/drawable-long-land-ldpi-v4/background.png
+[DEBUG]  Adding res/drawable-long-port-hdpi-v4/background.png
+[DEBUG]  Adding res/drawable-long-port-ldpi-v4/background.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ab_share_pack_holo_dark.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ab_share_pack_holo_light.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_focused_holo.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-notlong-land-hdpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-land-ldpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-land-mdpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-port-hdpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-port-ldpi-v4/background.png
+[DEBUG]  Adding res/drawable-notlong-port-mdpi-v4/background.png
+[DEBUG]  Deflating res/drawable-v21/abc_cab_background_top_material.xml
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ab_share_pack_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ab_share_pack_holo_light.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_focused_holo.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ab_share_pack_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ab_share_pack_holo_light.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_clear_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+[DEBUG]  Adding res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+[DEBUG]  Deflating res/drawable/abc_btn_check_material.xml
+[DEBUG]  Deflating res/drawable/abc_btn_radio_material.xml
+[DEBUG]  Deflating res/drawable/abc_cab_background_internal_bg.xml
+[DEBUG]  Deflating res/drawable/abc_cab_background_top_material.xml
+[DEBUG]  Deflating res/drawable/abc_edit_text_material.xml
+[DEBUG]  Deflating res/drawable/abc_item_background_holo_dark.xml
+[DEBUG]  Deflating res/drawable/abc_item_background_holo_light.xml
+[DEBUG]  Deflating res/drawable/abc_list_selector_background_transition_holo_dark.xml
+[DEBUG]  Deflating res/drawable/abc_list_selector_background_transition_holo_light.xml
+[DEBUG]  Deflating res/drawable/abc_list_selector_holo_dark.xml
+[DEBUG]  Deflating res/drawable/abc_list_selector_holo_light.xml
+[DEBUG]  Deflating res/drawable/abc_switch_thumb_material.xml
+[DEBUG]  Deflating res/drawable/abc_tab_indicator_material.xml
+[DEBUG]  Deflating res/drawable/abc_textfield_search_material.xml
+[DEBUG]  Adding res/drawable/appicon.png
+[DEBUG]  Adding res/drawable/background.png
+[DEBUG]  Adding res/drawable/btn_check_buttonless_on_64.png
+[DEBUG]  Adding res/drawable/btn_more_64.png
+[DEBUG]  Adding res/drawable/disclosure_64.png
+[DEBUG]  Deflating res/layout-v11/abc_screen_content_include.xml
+[DEBUG]  Deflating res/layout-v21/abc_screen_toolbar.xml
+[DEBUG]  Deflating res/layout/abc_action_bar_title_item.xml
+[DEBUG]  Deflating res/layout/abc_action_bar_up_container.xml
+[DEBUG]  Deflating res/layout/abc_action_bar_view_list_nav_layout.xml
+[DEBUG]  Deflating res/layout/abc_action_menu_item_layout.xml
+[DEBUG]  Deflating res/layout/abc_action_menu_layout.xml
+[DEBUG]  Deflating res/layout/abc_action_mode_bar.xml
+[DEBUG]  Deflating res/layout/abc_action_mode_close_item_material.xml
+[DEBUG]  Deflating res/layout/abc_activity_chooser_view.xml
+[DEBUG]  Deflating res/layout/abc_activity_chooser_view_include.xml
+[DEBUG]  Deflating res/layout/abc_activity_chooser_view_list_item.xml
+[DEBUG]  Deflating res/layout/abc_expanded_menu_layout.xml
+[DEBUG]  Deflating res/layout/abc_list_menu_item_checkbox.xml
+[DEBUG]  Deflating res/layout/abc_list_menu_item_icon.xml
+[DEBUG]  Deflating res/layout/abc_list_menu_item_layout.xml
+[DEBUG]  Deflating res/layout/abc_list_menu_item_radio.xml
+[DEBUG]  Deflating res/layout/abc_popup_menu_item_layout.xml
+[DEBUG]  Deflating res/layout/abc_screen_content_include.xml
+[DEBUG]  Deflating res/layout/abc_screen_simple.xml
+[DEBUG]  Deflating res/layout/abc_screen_simple_overlay_action_mode.xml
+[DEBUG]  Deflating res/layout/abc_screen_toolbar.xml
+[DEBUG]  Deflating res/layout/abc_search_dropdown_item_icons_2line.xml
+[DEBUG]  Deflating res/layout/abc_search_view.xml
+[DEBUG]  Deflating res/layout/abc_simple_dropdown_hint.xml
+[DEBUG]  Deflating res/layout/support_simple_spinner_dropdown_item.xml
+[DEBUG]  Deflating res/layout/titanium_tabgroup.xml
+[DEBUG]  Deflating res/layout/titanium_ui_checkbox.xml
+[DEBUG]  Deflating res/layout/titanium_ui_edittext.xml
+[DEBUG]  Deflating res/layout/titanium_ui_list_header_or_footer.xml
+[DEBUG]  Deflating res/layout/titanium_ui_list_item.xml
+[DEBUG]  Deflating res/layout/titanium_ui_spinner.xml
+[DEBUG]  Deflating res/layout/titanium_ui_switchcompat.xml
+[DEBUG]  Deflating resources.arsc
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/kroll-v8.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-analytics.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/aps-analytics.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-android.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/jaxen-1.1.1.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/ti-commons-codec-1.3.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/kroll-common.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/titanium.jar
+[DEBUG]  Deflating org/appcelerator/titanium/build.properties
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/background.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_100.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_64.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more_100.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_more_64.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG]  Adding org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-app.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-ui.jar
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG]  Deflating ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/nineoldandroids-appc-2.4.0.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-filesystem.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-media.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-appcompat.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/android-support-v4.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/android-support-v7-appcompat.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-locale.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-network.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/thirdparty.jar
+[DEBUG]  Deflating org/apache/Commons-NOTICE.txt
+[DEBUG]  Deflating org/apache/HttpComponents-NOTICE.txt
+[DEBUG]  Deflating org/apache/mime4j-NOTICE.txt
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-xml.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-utils.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-geolocation.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-accelerometer.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-contacts.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-map.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-gesture.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-calendar.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-platform.jar
+[DEBUG]  Processing /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/modules/titanium-database.jar
+[DEBUG]  Adding classes.dex
+[INFO]   Processing /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/src
+[DEBUG]  Adding lib/armeabi/libkroll-v8.so
+[DEBUG]  Adding lib/armeabi/libstlport_shared.so
+[DEBUG]  Adding lib/armeabi/libtiverify.so
+[DEBUG]  Adding lib/armeabi-v7a/libkroll-v8.so
+[DEBUG]  Adding lib/armeabi-v7a/libstlport_shared.so
+[DEBUG]  Adding lib/armeabi-v7a/libtiverify.so
+[DEBUG]  Adding lib/x86/libkroll-v8.so
+[DEBUG]  Adding lib/x86/libstlport_shared.so
+[DEBUG]  Adding lib/x86/libtiverify.so
+[INFO]   Writing unsigned apk: /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/app-unsigned.apk
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is booted, emitting booted event
+[INFO]   Emulator is booted
+[INFO]   SD card not required, skipping mount check
+[INFO]   Emulator ready!
+[INFO]   Using MD5withRSA signature algorithm
+[INFO]   Signing apk: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/jarsigner "-sigalg" "MD5withRSA" "-digestalg" "SHA1" "-keystore" "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/android/dev_keystore" "-storepass" "*******" "-signedjar" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/Wunderland Weather App.apk" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/app-unsigned.apk" "tidev"
+[INFO]   Aligning zip file: /Users/nwharry/Library/Android/sdk/build-tools/21.1.2/zipalign "-v" "4" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/Wunderland Weather App.apk" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/Wunderland Weather App.apkz"
+[INFO]   Writing build manifest: /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/build-manifest.json
+[INFO]   Making sure the adb server is running
+[INFO]   Installing apk: /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/Wunderland Weather App.apk
+[TRACE]  Checking if package manager service is started
+[TRACE]  Package manager has started
+[TRACE]  Executing: /Users/nwharry/Library/Android/sdk/platform-tools/adb -s 192.168.56.101:5555 install -r /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/bin/Wunderland Weather App.apk
+[INFO]   App successfully installed
+[INFO]   Starting app: com.project3w.weatherapp/.WunderlandWeatherAppActivity
+[DEBUG]  Trying to start the app...
+[INFO]   Application pid: 1458
+[INFO]   Project built successfully in 34s 246ms

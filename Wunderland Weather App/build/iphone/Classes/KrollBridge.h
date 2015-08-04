@@ -19,9 +19,9 @@
 
 #ifdef KROLL_COVERAGE
 # import "KrollCoverage.h"
-@interface TheMovieDatabaseSearchObject : KrollCoverageObject {
+@interface WunderlandWeatherAppObject : KrollCoverageObject {
 #else
-@interface TheMovieDatabaseSearchObject : KrollObject {
+@interface WunderlandWeatherAppObject : KrollObject {
 #endif
 @private
 	NSMutableDictionary *modules;
@@ -35,7 +35,7 @@
 -(TiModule*)moduleNamed:(NSString*)name context:(id<TiEvaluator>)context;
 @end
 
-extern NSString * TheMovieDatabaseSearch$ModuleRequireFormat;
+extern NSString * WunderlandWeatherApp$ModuleRequireFormat;
 
 @interface KrollBridge : Bridge<TiEvaluator,KrollDelegate> {
 @private
@@ -44,7 +44,7 @@ extern NSString * TheMovieDatabaseSearch$ModuleRequireFormat;
 	KrollContext *context;
 	NSDictionary *preload;
 	NSMutableDictionary *modules;
-	TheMovieDatabaseSearchObject *_themoviedatabasesearch;
+	WunderlandWeatherAppObject *_wunderlandweatherapp;
     KrollObject* console;
 	BOOL shutdown;
     BOOL evaluationError;

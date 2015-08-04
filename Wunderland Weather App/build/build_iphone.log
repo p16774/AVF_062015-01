@@ -1,5 +1,5 @@
 
-Mon Jul 20 2015 22:54:23 GMT-0500 (CDT)
+Mon Jul 13 2015 21:54:19 GMT-0500 (CDT)
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.0.0.GA --project-dir /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App --target simulator --ios-version 8.4 --device-family universal --sim-type iphone --sim-version 8.4 --device-id 7B1B30CB-8E34-4366-A78A-511B252EECEB --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51475 --username nobrakes@fullsail.edu --password L@unchB0x --plugin-paths /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules --config-file /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/build-1437450860343.json --no-banner
+  /usr/local/bin/node /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.0.0.GA --project-dir /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App --target simulator --ios-version 8.4 --device-family universal --sim-type iphone --sim-version 8.4 --device-id 7B1B30CB-8E34-4366-A78A-511B252EECEB --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 56497 --plugin-paths /Users/nwharry/.appcelerator/install/4.1.0/package/node_modules --config-file /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/build-1436842456087.json --no-banner
 
 [DEBUG]  Detecting modules in /Users/nwharry/Library/Application Support/Titanium/modules
 [DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/nwharry/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
@@ -62,41 +62,41 @@ Command
 [INFO]   Initiating prepare phase
 [DEBUG]  Setting Info.plist CFBundleVersion to 1.0
 [DEBUG]  Setting Info.plist CFBundleShortVersionString to 1.0
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/appicon.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/appicon.png
 [INFO]   Initiating Xcode pre-compile phase
-[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/KS_nav_ui.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/KS_nav_ui.png
-[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/KS_nav_views.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/KS_nav_views.png
-[DEBUG]  Ignoring /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/android
-[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/icon.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/icon.png
-[DEBUG]  Ignoring /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone
-[DEBUG]  Ignoring /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/mobileweb
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default-568h@2x.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default-568h@2x.png
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default-667h@2x.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default-667h@2x.png
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default-Landscape-736h@3x.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default-Landscape-736h@3x.png
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default-Landscape.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default-Landscape.png
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default-Landscape@2x.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default-Landscape@2x.png
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default-Portrait-736h@3x.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default-Portrait-736h@3x.png
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default-Portrait.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default-Portrait.png
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default-Portrait@2x.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default-Portrait@2x.png
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default.png
-[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/Default@2x.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/Default@2x.png
-[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/iphone/appicon.png => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/appicon.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/KS_nav_ui.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/KS_nav_ui.png
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/KS_nav_views.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/KS_nav_views.png
+[DEBUG]  Ignoring /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/android
+[DEBUG]  Ignoring /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone
+[DEBUG]  Ignoring /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/mobileweb
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default-568h@2x.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default-568h@2x.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default-667h@2x.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default-667h@2x.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default-Landscape-736h@3x.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default-Landscape-736h@3x.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default-Landscape.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default-Landscape.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default-Landscape@2x.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default-Landscape@2x.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default-Portrait-736h@3x.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default-Portrait-736h@3x.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default-Portrait.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default-Portrait.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default-Portrait@2x.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default-Portrait@2x.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/Default@2x.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/Default@2x.png
+[DEBUG]  Copying /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/iphone/appicon.png => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/appicon.png
 [INFO]   Processing JavaScript files
-[DEBUG]  Symlinking /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/liveview.js => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/app.js
-[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/display.js => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/display.js
-[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/search.js => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/search.js
-[DEBUG]  Symlinking /Users/nwharry/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9/ti.cloud.js => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/ti.cloud.js
+[DEBUG]  Symlinking /var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T/liveview.js => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/app.js
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/display.js => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/display.js
+[DEBUG]  Symlinking /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/Resources/geo.js => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/geo.js
+[DEBUG]  Symlinking /Users/nwharry/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9/ti.cloud.js => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/ti.cloud.js
 [INFO]   Processing Titanium namespace resources
-[DEBUG]  Copying /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/iphone/modules/ui/images => /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app/modules/ui/images
+[DEBUG]  Copying /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/iphone/modules/ui/images => /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app/modules/ui/images
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 266ms
+[INFO]   Finished building the application in 287ms
 [INFO]   Launching iOS Simulator
-[DEBUG]  [ioslib] Removing old log file: /Users/nwharry/Library/Developer/CoreSimulator/Devices/7B1B30CB-8E34-4366-A78A-511B252EECEB/data/Containers/Data/Application/646925DE-8594-4AD1-BE3F-790F72E1029D/Documents/288259fb-3a02-44bb-9ddd-cebf0f1bd7cb.log
-[DEBUG]  [ioslib] Executing: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/node_modules/ioslib/lib/ios-sim "launch" "/Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app" "--verbose" "--xcode-dir" "/Applications/Xcode.app/Contents/Developer" "--udid" "7B1B30CB-8E34-4366-A78A-511B252EECEB" "--timeout" "180"
+[DEBUG]  [ioslib] Removing old log file: /Users/nwharry/Library/Developer/CoreSimulator/Devices/7B1B30CB-8E34-4366-A78A-511B252EECEB/data/Containers/Data/Application/14D262AE-1E09-4382-A290-E21171343659/Documents/288259fb-3a02-44bb-9ddd-cebf0f1bd7cb.log
+[DEBUG]  [ioslib] Executing: /Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/node_modules/ioslib/lib/ios-sim "launch" "/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app" "--verbose" "--xcode-dir" "/Applications/Xcode.app/Contents/Developer" "--udid" "7B1B30CB-8E34-4366-A78A-511B252EECEB" "--timeout" "180"
 [DEBUG]  [ioslib] Executing: osascript "/Users/nwharry/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/node_modules/ioslib/lib/iphone_sim_activate.scpt" "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app"
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7fce11c1b560> specified by app path /Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/The Movie Database Search.app
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7fce11d1eb80> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T//ios-sim-stderr-pipe-1437450863'
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T//ios-sim-stdout-pipe-1437450863'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7f91ba507aa0> specified by app path /Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/iphone/build/Debug-iphonesimulator/Wunderland Weather App.app
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7f91ba4500f0> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T//ios-sim-stderr-pipe-1436842459'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/w9/fhnh15rd6nn0j_0dzyfxkf840000gn/T//ios-sim-stdout-pipe-1436842459'
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] using device family iphone
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 52755AC6-5ED7-4C62-A1F8-5AED76D628DC == 7B1B30CB-8E34-4366-A78A-511B252EECEB
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing F8FCEF4C-D102-4D9A-9F70-739262CADF9B == 7B1B30CB-8E34-4366-A78A-511B252EECEB
@@ -105,5 +105,5 @@ Command
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 7B1B30CB-8E34-4366-A78A-511B252EECEB == 7B1B30CB-8E34-4366-A78A-511B252EECEB
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] set device to : iPhone 6
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Session started
-[DEBUG]  [ioslib] Found application log file: /Users/nwharry/Library/Developer/CoreSimulator/Devices/7B1B30CB-8E34-4366-A78A-511B252EECEB/data/Containers/Data/Application/A4E60102-723B-4C44-8AAB-DD88D7046B1E/Documents/288259fb-3a02-44bb-9ddd-cebf0f1bd7cb.log
-[INFO]   Project built successfully in 4s 175ms
+[DEBUG]  [ioslib] Found application log file: /Users/nwharry/Library/Developer/CoreSimulator/Devices/7B1B30CB-8E34-4366-A78A-511B252EECEB/data/Containers/Data/Application/7693E960-BAD8-4EC5-969B-3ADF9B7550AD/Documents/288259fb-3a02-44bb-9ddd-cebf0f1bd7cb.log
+[INFO]   Project built successfully in 4s 973ms

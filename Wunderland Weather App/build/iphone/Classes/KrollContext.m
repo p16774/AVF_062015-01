@@ -937,7 +937,7 @@ static TiValueRef StringFormatDecimalCallback (TiContextRef jsContext, TiObjectR
 {
 	if (stopped!=YES)
 	{
-		@throw [NSException exceptionWithName:@"org.themoviedatabasesearch.kroll" 
+		@throw [NSException exceptionWithName:@"org.wunderlandweatherapp.kroll" 
 									   reason:@"already started"
 									 userInfo:nil];
 	}

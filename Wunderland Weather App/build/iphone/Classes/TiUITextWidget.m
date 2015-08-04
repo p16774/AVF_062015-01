@@ -239,7 +239,7 @@
 }
 
 
-#pragma mark - TheMovieDatabaseSearch Internal Use Only
+#pragma mark - WunderlandWeatherApp Internal Use Only
 -(void)updateKeyboardStatus
 {
     if ( ([[[TiApp app] controller] keyboardVisible]) && ([[[TiApp app] controller] keyboardFocusedProxy] == [self proxy]) ) {

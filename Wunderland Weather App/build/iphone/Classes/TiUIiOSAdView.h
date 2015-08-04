@@ -21,7 +21,7 @@
 
 @property (nonatomic, readonly) ADBannerView* adview;
 
-#pragma mark - TheMovieDatabaseSearch Internal Use
+#pragma mark - WunderlandWeatherApp Internal Use
 -(CGFloat)contentHeightForWidth:(CGFloat)value;
 -(CGFloat)contentWidthForWidth:(CGFloat)value;
 @end

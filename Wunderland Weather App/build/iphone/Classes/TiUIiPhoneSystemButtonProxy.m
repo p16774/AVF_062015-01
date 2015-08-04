@@ -39,12 +39,12 @@ MAKE_SYSTEM_PROP(DONE,UIBarButtonSystemItemDone);
 MAKE_SYSTEM_PROP(FLEXIBLE_SPACE,UIBarButtonSystemItemFlexibleSpace);
 MAKE_SYSTEM_PROP(FIXED_SPACE,UIBarButtonSystemItemFixedSpace);
 
-MAKE_SYSTEM_PROP(ACTIVITY,UITheMovieDatabaseSearchNativeItemSpinner);
-MAKE_SYSTEM_PROP(SPINNER,UITheMovieDatabaseSearchNativeItemSpinner);
-MAKE_SYSTEM_PROP(INFO_LIGHT,UITheMovieDatabaseSearchNativeItemInfoLight);
-MAKE_SYSTEM_PROP(INFO_DARK,UITheMovieDatabaseSearchNativeItemInfoDark);
-MAKE_SYSTEM_PROP(DISCLOSURE,UITheMovieDatabaseSearchNativeItemDisclosure);
-MAKE_SYSTEM_PROP(CONTACT_ADD,UITheMovieDatabaseSearchNativeItemContactAdd);
+MAKE_SYSTEM_PROP(ACTIVITY,UIWunderlandWeatherAppNativeItemSpinner);
+MAKE_SYSTEM_PROP(SPINNER,UIWunderlandWeatherAppNativeItemSpinner);
+MAKE_SYSTEM_PROP(INFO_LIGHT,UIWunderlandWeatherAppNativeItemInfoLight);
+MAKE_SYSTEM_PROP(INFO_DARK,UIWunderlandWeatherAppNativeItemInfoDark);
+MAKE_SYSTEM_PROP(DISCLOSURE,UIWunderlandWeatherAppNativeItemDisclosure);
+MAKE_SYSTEM_PROP(CONTACT_ADD,UIWunderlandWeatherAppNativeItemContactAdd);
 
 
 @end

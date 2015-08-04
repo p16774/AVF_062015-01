@@ -1,0 +1,7 @@
+"/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/android/support/v7/appcompat/R.java"
+"/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/com/project3w/weatherapp/ApplicationStylesheet.java"
+"/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/com/project3w/weatherapp/R.java"
+"/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/com/project3w/weatherapp/WunderlandWeatherAppActivity.java"
+"/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/com/project3w/weatherapp/WunderlandWeatherAppAppInfo.java"
+"/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/com/project3w/weatherapp/WunderlandWeatherAppApplication.java"
+"/Users/nwharry/GitHub/AVF_062015-01 live/Wunderland Weather App/build/android/gen/ti/modules/titanium/ui/R.java"

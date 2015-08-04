@@ -750,3 +750,1062 @@ org.eclipse.core.runtime.CoreException: +---------------------------------------
 +---------------------------------------------------------------------------------------+
 
 {"org_id":100035825,"org_name":"nobrakesfullsailedu","current_user_belongs_to_organization":true}
+!SESSION 2015-08-03 20:46:45.853 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/nwharry/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/nwharry/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-08-03 20:46:59.097
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.aptana.core 4 0 2015-08-03 20:47:19.237
+!MESSAGE (Build 4.1.0.1423009896) [ERROR]  null
+!STACK 0
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.UNIXProcess.waitFor(UNIXProcess.java:262)
+	at com.aptana.core.util.ProcessRunner.processData(ProcessRunner.java:381)
+	at com.aptana.core.util.ProcessRunner.processData(ProcessRunner.java:345)
+	at com.aptana.core.util.ProcessRunner.processResult(ProcessRunner.java:432)
+	at com.appcelerator.titanium.core.internal.cli.NodeAppcCLI.runCommand(NodeAppcCLI.java:239)
+	at com.appcelerator.titanium.rcp.handlers.TitaniumSplashHandler$3.run(TitaniumSplashHandler.java:294)
+
+!ENTRY com.appcelerator.titanium.rcp 4 0 2015-08-03 20:47:19.390
+!MESSAGE (Build 4.1.0.1423009896) [ERROR]  Failed to check login status. Likely not logged in.
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-08-03 20:47:20.757
+!MESSAGE (Build 4.1.0.1423009896) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/mobilesdk/osx
+
+!ENTRY com.appcelerator.titanium.core 4 0 2015-08-03 20:47:20.758
+!MESSAGE (Build 4.1.0.1423009896) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/modules
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:47:51.017
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+	at com.appcelerator.titanium360.internal.core.Titanium360User.doGetOrganizations(Titanium360User.java:295)
+	at com.appcelerator.titanium360.internal.core.Titanium360User.access$0(Titanium360User.java:276)
+	at com.appcelerator.titanium360.internal.core.Titanium360User$1.run(Titanium360User.java:174)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1486)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at com.fasterxml.jackson.core.base.ParserBase.reportUnexpectedNumberChar(ParserBase.java:991)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleInvalidNumberStart(ReaderBasedJsonParser.java:1209)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1455)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:683)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:3600)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3545)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2134)
+	at com.appcelerator.titanium360.internal.core.Titanium360User.doGetOrganizations(Titanium360User.java:288)
+	... 3 more
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:47:51.018
+!MESSAGE Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+!STACK 0
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1486)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at com.fasterxml.jackson.core.base.ParserBase.reportUnexpectedNumberChar(ParserBase.java:991)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleInvalidNumberStart(ReaderBasedJsonParser.java:1209)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1455)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:683)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:3600)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3545)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2134)
+	at com.appcelerator.titanium360.internal.core.Titanium360User.doGetOrganizations(Titanium360User.java:288)
+	at com.appcelerator.titanium360.internal.core.Titanium360User.access$0(Titanium360User.java:276)
+	at com.appcelerator.titanium360.internal.core.Titanium360User$1.run(Titanium360User.java:174)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.appcelerator.titanium.ui 4 0 2015-08-03 20:47:55.130
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  no protocol: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+https://security.appcelerator.com/auth/ff71cb27f88e0d2650496b405871a6fbfabb98c0%20QQeDz4ZeVbmAym2l3B1OZbsZ95mlRbxHg3O%2Fwhec96fmwbWJ3AMsQWvtDfWHUmIaJ0CNkFFH3ojZqfdtcRV%2FZh%2BoEhYjXMMF3OqdRMI0lpm7WjM0pgtLf1UA31A0e6BnUNVMBuaf5EA3hbdfT24tgTUr3VGgBXjmJnhTWjfl2IJdOeWG8c0PsmqAlDm%2F77w59qZjuCZPBLsUvL8bDa0uoPcxVtcdvUXhUDzSQ43vUpYc6hQTun68xaNpfLb3jOGiLzqN%2B1LUTghGotwC%2B1jmE2UznBHWXHBeLGZVlNYUqEk89Dvr9VsJgspXLjwdGnhQYEDQ5sbdLzp7fRpS84X77FGqrG2QyxAoxQ5R8cjBeSR4obb7DgwJVoUsjtKdzGDOojLQR9S9ISLIPeRahcKKZZiAH4rdqwexHs8LdzKKcxSzN7Fslq0SDxXyUAX2TpKCxNtlLb1AAlKNB39gg7Aq0FJVSBkXsrl5VjQPGW5zwQAQsjCeaMcq2kmXUViHXMMqgLMxYVSe6DzBJo05hLroNJNaNj211Y5GcvYn3UQbXhO92xpu7oPM5BXPPuedf2VOe7DcXZ%2BUvgurNwGQAvpFE654DxGwjZ7FqRIKd2bv2Cd6dWS7G3XT%2Fcc3HvFo3g3as9j3XjXXIdlnxp9VeLg3l3kdxY7Tp5WfTS1vC2SwPInnCc9BSw7H9R4Z3QOyWu%2BJ4G0lJyuoXVq8LfpWdo0zUsdV5E5iXG9gOkND%2BX23e2RWLcbLbaLXjW3nKVPacrwKgxyllSBCPYjXwkAMG9hDekkeWc3uCbupzRufbJt9Nj4%3D.html?redirect=https%3A%2F%2Fappc-studio.appcelerator.com%2F
+!STACK 0
+java.net.MalformedURLException: no protocol: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+https://security.appcelerator.com/auth/ff71cb27f88e0d2650496b405871a6fbfabb98c0%20QQeDz4ZeVbmAym2l3B1OZbsZ95mlRbxHg3O%2Fwhec96fmwbWJ3AMsQWvtDfWHUmIaJ0CNkFFH3ojZqfdtcRV%2FZh%2BoEhYjXMMF3OqdRMI0lpm7WjM0pgtLf1UA31A0e6BnUNVMBuaf5EA3hbdfT24tgTUr3VGgBXjmJnhTWjfl2IJdOeWG8c0PsmqAlDm%2F77w59qZjuCZPBLsUvL8bDa0uoPcxVtcdvUXhUDzSQ43vUpYc6hQTun68xaNpfLb3jOGiLzqN%2B1LUTghGotwC%2B1jmE2UznBHWXHBeLGZVlNYUqEk89Dvr9VsJgspXLjwdGnhQYEDQ5sbdLzp7fRpS84X77FGqrG2QyxAoxQ5R8cjBeSR4obb7DgwJVoUsjtKdzGDOojLQR9S9ISLIPeRahcKKZZiAH4rdqwexHs8LdzKKcxSzN7Fslq0SDxXyUAX2TpKCxNtlLb1AAlKNB39gg7Aq0FJVSBkXsrl5VjQPGW5zwQAQsjCeaMcq2kmXUViHXMMqgLMxYVSe6DzBJo05hLroNJNaNj211Y5GcvYn3UQbXhO92xpu7oPM5BXPPuedf2VOe7DcXZ%2BUvgurNwGQAvpFE654DxGwjZ7FqRIKd2bv2Cd6dWS7G3XT%2Fcc3HvFo3g3as9j3XjXXIdlnxp9VeLg3l3kdxY7Tp5WfTS1vC2SwPInnCc9BSw7H9R4Z3QOyWu%2BJ4G0lJyuoXVq8LfpWdo0zUsdV5E5iXG9gOkND%2BX23e2RWLcbLbaLXjW3nKVPacrwKgxyllSBCPYjXwkAMG9hDekkeWc3uCbupzRufbJt9Nj4%3D.html?redirect=https%3A%2F%2Fappc-studio.appcelerator.com%2F
+	at java.net.URL.<init>(URL.java:589)
+	at java.net.URL.<init>(URL.java:486)
+	at java.net.URL.<init>(URL.java:435)
+	at com.appcelerator.titanium.ui.dashboard.DashboardManager$1$1.run(DashboardManager.java:207)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3983)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.appcelerator.titanium.rcp.IDEApplication.start(IDEApplication.java:126)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:47:55.649
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+	at com.appcelerator.titanium360.internal.core.Titanium360User.doGetOrganizations(Titanium360User.java:295)
+	at com.appcelerator.titanium360.internal.core.Titanium360User.access$0(Titanium360User.java:276)
+	at com.appcelerator.titanium360.internal.core.Titanium360User$1.run(Titanium360User.java:174)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1486)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at com.fasterxml.jackson.core.base.ParserBase.reportUnexpectedNumberChar(ParserBase.java:991)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleInvalidNumberStart(ReaderBasedJsonParser.java:1209)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1455)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:683)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:3600)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3545)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2134)
+	at com.appcelerator.titanium360.internal.core.Titanium360User.doGetOrganizations(Titanium360User.java:288)
+	... 3 more
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:47:55.649
+!MESSAGE Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+!STACK 0
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{
+  "username": "nobrakes@fullsail.edu",
+  "org_name": "nobrakesfullsailedu",
+  "org_id": 100035825,
+  "orgs": {
+    "100035825": {
+      "org_id": 100035825,
+      "name": "nobrakesfullsailedu",
+      "_id": "556ce033ed9b579f1d2ae13c",
+      "guid": "71329151-0992-4b15-8054-9ac820a54c80",
+      "user_count": 1,
+      "current_users_role": "admin",
+      "is_node_acs_admin": true,
+      "created": "2015-06-01T22:44:03.079Z",
+      "reseller": false,
+      "active": true,
+      "package": "free",
+      "envs": [
+        {
+          "_id": "production",
+          "name": "production",
+          "isProduction": true,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        },
+        {
+          "_id": "development",
+          "name": "development",
+          "isProduction": false,
+          "acsBaseUrl": "https://api.cloud.appcelerator.com",
+          "acsAuthBaseUrl": "https://secure-identity.cloud.appcelerator.com",
+          "nodeACSEndpoint": "https://admin.cloudapp-enterprise.appcelerator.com"
+        }
+      ]
+    }
+  }
+}; line: 1, column: 3]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1486)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at com.fasterxml.jackson.core.base.ParserBase.reportUnexpectedNumberChar(ParserBase.java:991)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleInvalidNumberStart(ReaderBasedJsonParser.java:1209)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1455)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:683)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:3600)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3545)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2134)
+	at com.appcelerator.titanium360.internal.core.Titanium360User.doGetOrganizations(Titanium360User.java:288)
+	at com.appcelerator.titanium360.internal.core.Titanium360User.access$0(Titanium360User.java:276)
+	at com.appcelerator.titanium360.internal.core.Titanium360User$1.run(Titanium360User.java:174)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:00.598
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Requesting downloads json returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"modules\":[{\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iphone\",\"android\"],\"required\":true,\"partner_id\":\"C62F568D148845509E7E9D8317A24462\",\"partner_name\":\"crittercism\",\"name\":\"Appcelerator Performance Module\",\"description\":\"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.\",\"id\":\"com.appcelerator.apm\",\"guid\":\"ec36d909-befa-4ca1-b518-1e3f152ead61\",\"version\":\"1.1.1\",\"url\":\"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip\",\"min_mobilesdk_version\":\"3.1.1\"}],\"components\":[{\"id\":\"com.soasta.touchtest.matt\",\"name\":\"Appcelerator Test Module\",\"description\":\"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.\",\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iPhone\",\"android\"],\"version\":\"7732.313\",\"url\":\"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip\",\"min_mobilesdk_version\":\"3.1.1\",\"required\":true,\"partner_id\":\"B70300B47FCF40FB83F9F870B7BF77E8\",\"partner_name\":\"soasta\"}]}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:00.598
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.getDownloads(Titanium360Manager.java:434)
+	at com.appcelerator.titanium360.core.update.AppceleratorModuleReleaseProvider.retrieveUpdates(AppceleratorModuleReleaseProvider.java:47)
+	at com.appcelerator.titanium.update.core.AbstractTitaniumReleaseProvider.getReleases(AbstractTitaniumReleaseProvider.java:49)
+	at com.appcelerator.titanium360.core.update.AppceleratorModuleReleaseProvider.getReleases(AppceleratorModuleReleaseProvider.java:59)
+	at com.appcelerator.titanium.update.core.TitaniumReleaseProviderManager.getReleases(TitaniumReleaseProviderManager.java:192)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getTitaniumReleaseUpdates(TitaniumReleasesUpdater.java:991)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.hasModuleUpdates(TitaniumReleasesUpdater.java:254)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.hasUpdates(TitaniumReleasesUpdater.java:203)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:61)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2755)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:00.598
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:00.599
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unable to retrieve user downloads. The following error occured:
+
++---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:06.403
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Requesting downloads json returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"modules\":[{\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iphone\",\"android\"],\"required\":true,\"partner_id\":\"C62F568D148845509E7E9D8317A24462\",\"partner_name\":\"crittercism\",\"name\":\"Appcelerator Performance Module\",\"description\":\"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.\",\"id\":\"com.appcelerator.apm\",\"guid\":\"ec36d909-befa-4ca1-b518-1e3f152ead61\",\"version\":\"1.1.1\",\"url\":\"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip\",\"min_mobilesdk_version\":\"3.1.1\"}],\"components\":[{\"id\":\"com.soasta.touchtest.matt\",\"name\":\"Appcelerator Test Module\",\"description\":\"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.\",\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iPhone\",\"android\"],\"version\":\"7732.313\",\"url\":\"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip\",\"min_mobilesdk_version\":\"3.1.1\",\"required\":true,\"partner_id\":\"B70300B47FCF40FB83F9F870B7BF77E8\",\"partner_name\":\"soasta\"}]}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:06.404
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.getDownloads(Titanium360Manager.java:434)
+	at com.appcelerator.titanium360.core.update.SoastaComponentReleaseProvider.retrieveUpdates(SoastaComponentReleaseProvider.java:50)
+	at com.appcelerator.titanium.update.core.AbstractTitaniumReleaseProvider.getReleases(AbstractTitaniumReleaseProvider.java:49)
+	at com.appcelerator.titanium360.core.update.SoastaComponentReleaseProvider.getReleases(SoastaComponentReleaseProvider.java:62)
+	at com.appcelerator.titanium.update.core.TitaniumReleaseProviderManager.getReleases(TitaniumReleaseProviderManager.java:192)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getTitaniumReleaseUpdates(TitaniumReleasesUpdater.java:991)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.hasComponentUpdates(TitaniumReleasesUpdater.java:262)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.hasUpdates(TitaniumReleasesUpdater.java:207)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:61)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2755)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:06.404
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:06.405
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unable to retrieve user downloads. The following error occured:
+
++---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:12.766
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Requesting downloads json returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"modules\":[{\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iphone\",\"android\"],\"required\":true,\"partner_id\":\"C62F568D148845509E7E9D8317A24462\",\"partner_name\":\"crittercism\",\"name\":\"Appcelerator Performance Module\",\"description\":\"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.\",\"id\":\"com.appcelerator.apm\",\"guid\":\"ec36d909-befa-4ca1-b518-1e3f152ead61\",\"version\":\"1.1.1\",\"url\":\"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip\",\"min_mobilesdk_version\":\"3.1.1\"}],\"components\":[{\"id\":\"com.soasta.touchtest.matt\",\"name\":\"Appcelerator Test Module\",\"description\":\"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.\",\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iPhone\",\"android\"],\"version\":\"7732.313\",\"url\":\"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip\",\"min_mobilesdk_version\":\"3.1.1\",\"required\":true,\"partner_id\":\"B70300B47FCF40FB83F9F870B7BF77E8\",\"partner_name\":\"soasta\"}]}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:12.767
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.getDownloads(Titanium360Manager.java:434)
+	at com.appcelerator.titanium360.core.update.AppceleratorModuleReleaseProvider.retrieveUpdates(AppceleratorModuleReleaseProvider.java:47)
+	at com.appcelerator.titanium.update.core.AbstractTitaniumReleaseProvider.getReleases(AbstractTitaniumReleaseProvider.java:49)
+	at com.appcelerator.titanium360.core.update.AppceleratorModuleReleaseProvider.getReleases(AppceleratorModuleReleaseProvider.java:59)
+	at com.appcelerator.titanium.update.core.TitaniumReleaseProviderManager.getReleases(TitaniumReleaseProviderManager.java:192)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getTitaniumReleaseUpdates(TitaniumReleasesUpdater.java:991)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getAvailableUpdates(TitaniumReleasesUpdater.java:306)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.hasToInstallPackages(TitaniumUpdateStartup.java:191)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:151)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2755)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:12.767
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:12.768
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unable to retrieve user downloads. The following error occured:
+
++---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:16.353
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Requesting downloads json returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"modules\":[{\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iphone\",\"android\"],\"required\":true,\"partner_id\":\"C62F568D148845509E7E9D8317A24462\",\"partner_name\":\"crittercism\",\"name\":\"Appcelerator Performance Module\",\"description\":\"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.\",\"id\":\"com.appcelerator.apm\",\"guid\":\"ec36d909-befa-4ca1-b518-1e3f152ead61\",\"version\":\"1.1.1\",\"url\":\"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip\",\"min_mobilesdk_version\":\"3.1.1\"}],\"components\":[{\"id\":\"com.soasta.touchtest.matt\",\"name\":\"Appcelerator Test Module\",\"description\":\"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.\",\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iPhone\",\"android\"],\"version\":\"7732.313\",\"url\":\"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip\",\"min_mobilesdk_version\":\"3.1.1\",\"required\":true,\"partner_id\":\"B70300B47FCF40FB83F9F870B7BF77E8\",\"partner_name\":\"soasta\"}]}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:16.353
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.getDownloads(Titanium360Manager.java:434)
+	at com.appcelerator.titanium360.core.update.SoastaComponentReleaseProvider.retrieveUpdates(SoastaComponentReleaseProvider.java:50)
+	at com.appcelerator.titanium.update.core.AbstractTitaniumReleaseProvider.getReleases(AbstractTitaniumReleaseProvider.java:49)
+	at com.appcelerator.titanium360.core.update.SoastaComponentReleaseProvider.getReleases(SoastaComponentReleaseProvider.java:62)
+	at com.appcelerator.titanium.update.core.TitaniumReleaseProviderManager.getReleases(TitaniumReleaseProviderManager.java:192)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getTitaniumReleaseUpdates(TitaniumReleasesUpdater.java:991)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getAvailableUpdates(TitaniumReleasesUpdater.java:312)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.hasToInstallPackages(TitaniumUpdateStartup.java:191)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:151)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2755)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:16.353
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:16.354
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unable to retrieve user downloads. The following error occured:
+
++---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:50.529
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Requesting downloads json returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"modules\":[{\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iphone\",\"android\"],\"required\":true,\"partner_id\":\"C62F568D148845509E7E9D8317A24462\",\"partner_name\":\"crittercism\",\"name\":\"Appcelerator Performance Module\",\"description\":\"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.\",\"id\":\"com.appcelerator.apm\",\"guid\":\"ec36d909-befa-4ca1-b518-1e3f152ead61\",\"version\":\"1.1.1\",\"url\":\"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip\",\"min_mobilesdk_version\":\"3.1.1\"}],\"components\":[{\"id\":\"com.soasta.touchtest.matt\",\"name\":\"Appcelerator Test Module\",\"description\":\"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.\",\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iPhone\",\"android\"],\"version\":\"7732.313\",\"url\":\"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip\",\"min_mobilesdk_version\":\"3.1.1\",\"required\":true,\"partner_id\":\"B70300B47FCF40FB83F9F870B7BF77E8\",\"partner_name\":\"soasta\"}]}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:50.529
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.getDownloads(Titanium360Manager.java:434)
+	at com.appcelerator.titanium360.core.update.AppceleratorModuleReleaseProvider.retrieveUpdates(AppceleratorModuleReleaseProvider.java:47)
+	at com.appcelerator.titanium.update.core.AbstractTitaniumReleaseProvider.getReleases(AbstractTitaniumReleaseProvider.java:49)
+	at com.appcelerator.titanium360.core.update.AppceleratorModuleReleaseProvider.getReleases(AppceleratorModuleReleaseProvider.java:59)
+	at com.appcelerator.titanium.update.core.TitaniumReleaseProviderManager.getReleases(TitaniumReleaseProviderManager.java:192)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getTitaniumReleaseUpdates(TitaniumReleasesUpdater.java:991)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getAvailableUpdates(TitaniumReleasesUpdater.java:306)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup$1.run(TitaniumUpdateStartup.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:50.530
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:50.531
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unable to retrieve user downloads. The following error occured:
+
++---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:55.072
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Requesting downloads json returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"modules\":[{\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iphone\",\"android\"],\"required\":true,\"partner_id\":\"C62F568D148845509E7E9D8317A24462\",\"partner_name\":\"crittercism\",\"name\":\"Appcelerator Performance Module\",\"description\":\"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.\",\"id\":\"com.appcelerator.apm\",\"guid\":\"ec36d909-befa-4ca1-b518-1e3f152ead61\",\"version\":\"1.1.1\",\"url\":\"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip\",\"min_mobilesdk_version\":\"3.1.1\"}],\"components\":[{\"id\":\"com.soasta.touchtest.matt\",\"name\":\"Appcelerator Test Module\",\"description\":\"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.\",\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iPhone\",\"android\"],\"version\":\"7732.313\",\"url\":\"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip\",\"min_mobilesdk_version\":\"3.1.1\",\"required\":true,\"partner_id\":\"B70300B47FCF40FB83F9F870B7BF77E8\",\"partner_name\":\"soasta\"}]}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:55.073
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.getDownloads(Titanium360Manager.java:434)
+	at com.appcelerator.titanium360.core.update.SoastaComponentReleaseProvider.retrieveUpdates(SoastaComponentReleaseProvider.java:50)
+	at com.appcelerator.titanium.update.core.AbstractTitaniumReleaseProvider.getReleases(AbstractTitaniumReleaseProvider.java:49)
+	at com.appcelerator.titanium360.core.update.SoastaComponentReleaseProvider.getReleases(SoastaComponentReleaseProvider.java:62)
+	at com.appcelerator.titanium.update.core.TitaniumReleaseProviderManager.getReleases(TitaniumReleaseProviderManager.java:192)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getTitaniumReleaseUpdates(TitaniumReleasesUpdater.java:991)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getAvailableUpdates(TitaniumReleasesUpdater.java:312)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup$1.run(TitaniumUpdateStartup.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:55.073
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:55.085
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unable to retrieve user downloads. The following error occured:
+
++---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:58.582
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Requesting downloads json returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"modules\":[{\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iphone\",\"android\"],\"required\":true,\"partner_id\":\"C62F568D148845509E7E9D8317A24462\",\"partner_name\":\"crittercism\",\"name\":\"Appcelerator Performance Module\",\"description\":\"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.\",\"id\":\"com.appcelerator.apm\",\"guid\":\"ec36d909-befa-4ca1-b518-1e3f152ead61\",\"version\":\"1.1.1\",\"url\":\"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip\",\"min_mobilesdk_version\":\"3.1.1\"}],\"components\":[{\"id\":\"com.soasta.touchtest.matt\",\"name\":\"Appcelerator Test Module\",\"description\":\"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.\",\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iPhone\",\"android\"],\"version\":\"7732.313\",\"url\":\"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip\",\"min_mobilesdk_version\":\"3.1.1\",\"required\":true,\"partner_id\":\"B70300B47FCF40FB83F9F870B7BF77E8\",\"partner_name\":\"soasta\"}]}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:58.582
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.getDownloads(Titanium360Manager.java:434)
+	at com.appcelerator.titanium360.core.update.AppceleratorModuleReleaseProvider.retrieveUpdates(AppceleratorModuleReleaseProvider.java:47)
+	at com.appcelerator.titanium.update.core.AbstractTitaniumReleaseProvider.getReleases(AbstractTitaniumReleaseProvider.java:49)
+	at com.appcelerator.titanium360.core.update.AppceleratorModuleReleaseProvider.getReleases(AppceleratorModuleReleaseProvider.java:59)
+	at com.appcelerator.titanium.update.core.TitaniumReleaseProviderManager.getReleases(TitaniumReleaseProviderManager.java:192)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getTitaniumReleaseUpdates(TitaniumReleasesUpdater.java:991)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getAvailableUpdates(TitaniumReleasesUpdater.java:306)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.hasToInstallPackages(TitaniumUpdateStartup.java:191)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.access$0(TitaniumUpdateStartup.java:189)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup$1.run(TitaniumUpdateStartup.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:58.582
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:48:58.594
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unable to retrieve user downloads. The following error occured:
+
++---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:49:02.946
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Requesting downloads json returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"modules\":[{\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iphone\",\"android\"],\"required\":true,\"partner_id\":\"C62F568D148845509E7E9D8317A24462\",\"partner_name\":\"crittercism\",\"name\":\"Appcelerator Performance Module\",\"description\":\"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.\",\"id\":\"com.appcelerator.apm\",\"guid\":\"ec36d909-befa-4ca1-b518-1e3f152ead61\",\"version\":\"1.1.1\",\"url\":\"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip\",\"min_mobilesdk_version\":\"3.1.1\"}],\"components\":[{\"id\":\"com.soasta.touchtest.matt\",\"name\":\"Appcelerator Test Module\",\"description\":\"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.\",\"oses\":[\"linux\",\"win32\",\"osx\"],\"platforms\":[\"iPhone\",\"android\"],\"version\":\"7732.313\",\"url\":\"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip\",\"min_mobilesdk_version\":\"3.1.1\",\"required\":true,\"partner_id\":\"B70300B47FCF40FB83F9F870B7BF77E8\",\"partner_name\":\"soasta\"}]}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:49:02.946
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.getDownloads(Titanium360Manager.java:434)
+	at com.appcelerator.titanium360.core.update.SoastaComponentReleaseProvider.retrieveUpdates(SoastaComponentReleaseProvider.java:50)
+	at com.appcelerator.titanium.update.core.AbstractTitaniumReleaseProvider.getReleases(AbstractTitaniumReleaseProvider.java:49)
+	at com.appcelerator.titanium360.core.update.SoastaComponentReleaseProvider.getReleases(SoastaComponentReleaseProvider.java:62)
+	at com.appcelerator.titanium.update.core.TitaniumReleaseProviderManager.getReleases(TitaniumReleaseProviderManager.java:192)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getTitaniumReleaseUpdates(TitaniumReleasesUpdater.java:991)
+	at com.appcelerator.titanium.update.internal.core.TitaniumReleasesUpdater.getAvailableUpdates(TitaniumReleasesUpdater.java:312)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.hasToInstallPackages(TitaniumUpdateStartup.java:191)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.access$0(TitaniumUpdateStartup.java:189)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup$1.run(TitaniumUpdateStartup.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:49:02.946
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:49:02.959
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  Unable to retrieve user downloads. The following error occured:
+
++---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"modules":[{"oses":["linux","win32","osx"],"platforms":["iphone","android"],"required":true,"partner_id":"C62F568D148845509E7E9D8317A24462","partner_name":"crittercism","name":"Appcelerator Performance Module","description":"Used to enable the Appcelerator Performance service. Appcelerator Performance service allows you to identify and troubleshoot crashes in your mobile applications.","id":"com.appcelerator.apm","guid":"ec36d909-befa-4ca1-b518-1e3f152ead61","version":"1.1.1","url":"http://s3-us-west-2.amazonaws.com/appcelerator-modules/com.appcelerator.apm-ios_android-1.1.1.zip","min_mobilesdk_version":"3.1.1"}],"components":[{"id":"com.soasta.touchtest.matt","name":"Appcelerator Test Module","description":"Used to enable the Appcelerator Test service. Appcelerator Test service allows you to easily automate functional testing for mobile applications.","oses":["linux","win32","osx"],"platforms":["iPhone","android"],"version":"7732.313","url":"http://appctest-2.appcelerator.com/concerto/downloads/mobile/MakeAppTouchTestable.zip","min_mobilesdk_version":"3.1.1","required":true,"partner_id":"B70300B47FCF40FB83F9F870B7BF77E8","partner_name":"soasta"}]}
+
+!ENTRY com.appcelerator.titanium.android.core 4 0 2015-08-03 20:56:49.631
+!MESSAGE There are no Android devices connected
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:57:04.469
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Request: appOrganization, params: 288259fb-3a02-44bb-9ddd-cebf0f1bd7cb returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"org_id\":100035825,\"org_name\":\"nobrakesfullsailedu\",\"current_user_belongs_to_organization\":true}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:57:04.470
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"org_id":100035825,"org_name":"nobrakesfullsailedu","current_user_belongs_to_organization":true}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"org_id":100035825,"org_name":"nobrakesfullsailedu","current_user_belongs_to_organization":true}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.doGetOrganization(ThreeSixtyProject.java:155)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.getOrganization(ThreeSixtyProject.java:129)
+	at com.appcelerator.titanium360.ui.launch.contributor.VPCDeployTypeLaunchValidator.validate(VPCDeployTypeLaunchValidator.java:63)
+	at com.appcelerator.titanium.core.internal.cli.NodeAppcCLI.validateLaunchContributors(NodeAppcCLI.java:635)
+	at com.appcelerator.titanium.core.internal.cli.NodeAppcCLI.build(NodeAppcCLI.java:620)
+	at com.appcelerator.titanium.core.internal.cli.NodeAppcCLI.build(NodeAppcCLI.java:595)
+	at com.appcelerator.titanium.ios.core.launching.IOSNodeJSCommandsHelper.build(IOSNodeJSCommandsHelper.java:289)
+	at com.appcelerator.titanium.ios.core.launching.IOSNodeJSCommandsHelper.runOnSimulator(IOSNodeJSCommandsHelper.java:394)
+	at com.appcelerator.titanium.ios.ui.launching.simulator.IOSSimulatorLaunchConfigurationDelegate.launch(IOSSimulatorLaunchConfigurationDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:883)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:57:04.470
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"org_id":100035825,"org_name":"nobrakesfullsailedu","current_user_belongs_to_organization":true}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:57:08.819
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  API Request: appOrganization, params: 288259fb-3a02-44bb-9ddd-cebf0f1bd7cb returned with unexpected response {"success":false,"description":"+---------------------------------------------------------------------------------------+\n+ This is a Developer trial account. You may use this software for evaluation purposes. +\n+ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +\n+---------------------------------------------------------------------------------------+\n\n{\"org_id\":100035825,\"org_name\":\"nobrakesfullsailedu\",\"current_user_belongs_to_organization\":true}"}
+
+!ENTRY com.appcelerator.titanium.360.core 4 0 2015-08-03 20:57:08.819
+!MESSAGE (Build 4.1.0.201507071122) [ERROR]  +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"org_id":100035825,"org_name":"nobrakesfullsailedu","current_user_belongs_to_organization":true}
+!STACK 1
+org.eclipse.core.runtime.CoreException: +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"org_id":100035825,"org_name":"nobrakesfullsailedu","current_user_belongs_to_organization":true}
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.handleResponse(Titanium360Manager.java:326)
+	at com.appcelerator.titanium360.internal.core.Titanium360Manager.callAPI(Titanium360Manager.java:268)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.doGetOrganization(ThreeSixtyProject.java:155)
+	at com.appcelerator.titanium360.internal.core.ThreeSixtyProject.getOrganization(ThreeSixtyProject.java:129)
+	at com.appcelerator.titanium360.ui.launch.contributor.VPCDeployTypeLaunchValidator.validate(VPCDeployTypeLaunchValidator.java:63)
+	at com.appcelerator.titanium.core.internal.cli.NodeAppcCLI.validateLaunchContributors(NodeAppcCLI.java:635)
+	at com.appcelerator.titanium.core.internal.cli.NodeAppcCLI.build(NodeAppcCLI.java:620)
+	at com.appcelerator.titanium.core.internal.cli.NodeAppcCLI.build(NodeAppcCLI.java:595)
+	at com.appcelerator.titanium.ios.core.launching.IOSNodeJSCommandsHelper.build(IOSNodeJSCommandsHelper.java:289)
+	at com.appcelerator.titanium.ios.core.launching.IOSNodeJSCommandsHelper.runOnSimulator(IOSNodeJSCommandsHelper.java:394)
+	at com.appcelerator.titanium.ios.ui.launching.simulator.IOSSimulatorLaunchConfigurationDelegate.launch(IOSSimulatorLaunchConfigurationDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:883)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.appcelerator.titanium.360.core 4 0 2015-08-03 20:57:08.820
+!MESSAGE +---------------------------------------------------------------------------------------+
++ This is a Developer trial account. You may use this software for evaluation purposes. +
++ Once you are ready to go to production, upgrade at https://billing.appcelerator.com   +
++---------------------------------------------------------------------------------------+
+
+{"org_id":100035825,"org_name":"nobrakesfullsailedu","current_user_belongs_to_organization":true}

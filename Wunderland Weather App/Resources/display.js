@@ -31,14 +31,20 @@
 	
 	exports.logoView = Ti.UI.createView({
 		bottom: 10,
-		height: Ti.UI.FILL
+		height: 50
 	});     
+	
+	exports.logo = Ti.UI.createImageView({
+		image: 'http://icons.wxug.com/logos/PNG/wundergroundLogo_4c_horz.png',
+		//borderWidth: 3,
+		//borderColor: "#000"
+	});
 	 
 			        
 	// create display elements for current conditions
 	exports.list = Ti.UI.createLabel({
 		  color: '#404040',
-		  text: "Random Movie Search",
+		  text: "Current Conditions",
 		  top: 0,
 		  height: 20,
 		  textAlign: 'left',

@@ -52,7 +52,7 @@
 @end
 
 /**
- Protocol for containment controller. Implemented by UIViewControllers that can host TheMovieDatabaseSearch Windows
+ Protocol for containment controller. Implemented by UIViewControllers that can host WunderlandWeatherApp Windows
  */
 @protocol TiControllerContainment <NSObject>
 @required
