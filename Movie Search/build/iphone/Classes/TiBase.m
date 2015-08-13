@@ -8,7 +8,7 @@
  */
 #import "TiBase.h"
 #import "TiApp.h"
-#import "TiDebugger.h"
+
 #include <stdarg.h>
 #include <pthread.h>
 #include <sys/time.h>
@@ -21,6 +21,10 @@
 #include <unistd.h>
 #include <sys/sysctl.h>
 
+#endif
+
+#ifndef USE_JSCORE_FRAMEWORK
+#import "TiDebugger.h"
 #endif
 
 static bool ApplicationBeingDebugged(void)
@@ -92,7 +96,9 @@ void TiLogMessage(NSString* str, ...) {
     
     NSString* message = [[NSString alloc] initWithFormat:str arguments:args];
     if ([[TiApp app] debugMode]) {
+#ifndef USE_JSCORE_FRAMEWORK
         TiDebuggerLogMessage(OUT, message);
+#endif
     }
     else {
         
@@ -140,6 +146,7 @@ NSString * const kTiSuspendNotification = @"TiSuspend";
 NSString * const kTiPausedNotification = @"TiPaused";
 NSString * const kTiResumeNotification = @"TiResume";
 NSString * const kTiResumedNotification = @"TiResumed";
+NSString * const kTiErrorNotification = @"TiError";
 NSString * const kTiAnalyticsNotification = @"TiAnalytics";
 NSString * const kTiRemoteDeviceUUIDNotification = @"TiDeviceUUID";
 NSString * const kTiGestureShakeNotification = @"TiGestureShake";
@@ -157,6 +164,7 @@ NSString * const kTiLocalNotification = @"TiLocalNotification";
 NSString * const kTiLocalNotificationAction = @"TiLocalNotificationAction";
 NSString * const kTiRemoteNotificationAction = @"TiRemoteNotificationAction";
 NSString * const kTiUserNotificationSettingsNotification = @"TiUserNotificationSettingsNotification";
+NSString * const KTiWatchKitExtensionRequest = @"TiWatchKitExtensionRequest";
 
 NSString* const kTiBehaviorSize = @"SIZE";
 NSString* const kTiBehaviorFill = @"FILL";

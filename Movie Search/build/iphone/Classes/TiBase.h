@@ -576,6 +576,7 @@ extern NSString * const kTiSuspendNotification;
 extern NSString * const kTiPausedNotification;
 extern NSString * const kTiResumeNotification;
 extern NSString * const kTiResumedNotification;
+extern NSString * const kTiErrorNotification;
 extern NSString * const kTiAnalyticsNotification;
 extern NSString * const kTiRemoteDeviceUUIDNotification;
 extern NSString * const kTiGestureShakeNotification;
@@ -594,6 +595,7 @@ extern NSString * const kTiURLSessionCompleted;
 extern NSString * const kTiURLSessionEventsCompleted;
 extern NSString * const kTiURLDowloadProgress;
 extern NSString * const kTiURLUploadProgress;
+extern NSString * const KTiWatchKitExtensionRequest;
     
 extern NSString* const kTiBehaviorSize;
 extern NSString* const kTiBehaviorFill;

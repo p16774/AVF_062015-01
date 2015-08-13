@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiPublicAPI.m \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiPublicAPI.h
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TiPublicAPI.m \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TiPublicAPI.h

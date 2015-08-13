@@ -14,8 +14,6 @@
 #import "TiErrorController.h"
 #import "NSData+Additions.h"
 #import "ImageLoader.h"
-#import "TiDebugger.h"
-#import "TiProfiler/TiProfiler.h"
 #import <QuartzCore/QuartzCore.h>
 #import <AVFoundation/AVFoundation.h>
 #import "ApplicationDefaults.h"
@@ -24,6 +22,10 @@
 #import "Mimetypes.h"
 #ifdef KROLL_COVERAGE
 # import "KrollCoverage.h"
+#endif
+#ifndef USE_JSCORE_FRAMEWORK
+#import "TiDebugger.h"
+#import "TiProfiler/TiProfiler.h"
 #endif
 
 TiApp* sharedApp;
@@ -176,12 +178,27 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
     }
 }
 
+- (void)createDefaultDirectories
+{
+    NSError* error = nil;
+    NSURL* dir = [[NSFileManager defaultManager] URLForDirectory:NSApplicationSupportDirectory
+                                                        inDomain:NSUserDomainMask
+                                               appropriateForURL:nil
+                                                          create:YES
+                                                           error:&error];
+    if(error)
+    {
+        DebugLog(@"[ERROR]  %@ %@", error, [error userInfo]);
+    }
+}
+
 - (void)boot
 {
-	DebugLog(@"[INFO] %@/%@ (%s.9239ff9)",TI_APPLICATION_NAME,TI_APPLICATION_VERSION,TI_VERSION_STR);
+	DebugLog(@"[INFO] %@/%@ (%s.d57aa7d)",TI_APPLICATION_NAME,TI_APPLICATION_VERSION,TI_VERSION_STR);
 	
 	sessionId = [[TiUtils createUUID] retain];
 	TITANIUM_VERSION = [[NSString stringWithCString:TI_VERSION_STR encoding:NSUTF8StringEncoding] retain];
+#ifndef USE_JSCORE_FRAMEWORK
 	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"debugger" ofType:@"plist"];
     if (filePath != nil) {
         NSMutableDictionary *params = [[[NSMutableDictionary alloc] initWithContentsOfFile:filePath] autorelease];
@@ -248,6 +265,7 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
 		}
 #endif
     }
+#endif
     [self appBoot];
 }
 
@@ -385,7 +403,7 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
 	}
     [self launchToUrl];
 	[self boot];
-	
+    [self createDefaultDirectories];
 	return YES;
 }
 
@@ -465,6 +483,48 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
     [[NSNotificationCenter defaultCenter] postNotificationName:kTiRemoteNotificationAction object:event userInfo:nil];
     [event autorelease];
     completionHandler();
+}
+
+
+#pragma mark Apple Watchkit handleWatchKitExtensionRequest
+- (void)application:(UIApplication *)application
+            handleWatchKitExtensionRequest:(NSDictionary *)userInfo
+              reply:(void (^)(NSDictionary *replyInfo))reply
+{
+
+    // Generate unique key with timestamp.
+    id key = [NSString stringWithFormat:@"watchkit-reply-%f",[[NSDate date] timeIntervalSince1970]];
+    
+    if (pendingReplyHandlers == nil) {
+        pendingReplyHandlers = [[NSMutableDictionary alloc] init];
+    }
+    
+    [pendingReplyHandlers setObject:[[reply copy] autorelease ]forKey:key];
+    
+    NSMutableDictionary* dic = [[[NSMutableDictionary alloc] init] autorelease];
+    [dic setObject:key forKey:@"handlerId"];
+    if(userInfo!=nil){
+        [dic setObject:userInfo forKey:@"userInfo"];
+    }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:KTiWatchKitExtensionRequest object:self userInfo:dic];
+}
+
+-(void)watchKitExtensionRequestHandler:(id)key withUserInfo:(NSDictionary*)userInfo
+{
+    if (pendingReplyHandlers == nil) {
+        DebugLog(@"[ERROR] No WatchKitExtensionRequest have been recieved yet");
+        return;
+    }
+
+    if ([pendingReplyHandlers objectForKey:key]) {
+        void(^replyBlock)(NSDictionary *input);
+        replyBlock = [pendingReplyHandlers objectForKey:key];
+        replyBlock(userInfo);
+        [pendingReplyHandlers removeObjectForKey:key];
+    } else {
+        DebugLog(@"[ERROR] The specified WatchKitExtensionRequest Handler with ID: %@ has already expired or removed from the system", key);
+    }
 }
 
 #pragma mark -
@@ -956,9 +1016,11 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
 	RELEASE_TO_NIL(remoteDeviceUUID);
 	RELEASE_TO_NIL(remoteNotification);
 	RELEASE_TO_NIL(splashScreenImage);
+#ifndef USE_JSCORE_FRAMEWORK
     if ([self debugMode]) {
         TiDebuggerStop();
     }
+#endif
 	RELEASE_TO_NIL(backgroundServices);
 	RELEASE_TO_NIL(localNotification);
 	[super dealloc];

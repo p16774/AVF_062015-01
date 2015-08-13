@@ -5,15 +5,6 @@
  */
 
 
-// create window
-var win = Ti.UI.createWindow({
-	height: Ti.UI.Fill,
-	backgroundColor: '#ffffff',
-	fullscreen: false,
-	layout: 'vertical'
-});
-
-
 // check network and run geo functions
 if (Ti.Network.online) {
 	
@@ -29,8 +20,3 @@ if (Ti.Network.online) {
 	alert("No Network Found. Please Check you Connection and Try Again.");
 	
 };
-
-exports.win = win;
-
-// open our window
-win.open();

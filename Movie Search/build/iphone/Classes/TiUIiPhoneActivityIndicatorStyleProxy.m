@@ -9,7 +9,7 @@
 #ifdef USE_TI_UIIPHONEACTIVITYINDICATORSTYLE
 
 #import "TiUIiPhoneActivityIndicatorStyleProxy.h"
-
+#import "TiBase.h"
 
 @implementation TiUIiPhoneActivityIndicatorStyleProxy
 

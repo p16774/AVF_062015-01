@@ -6,9 +6,9 @@
  * 
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
-#import "Ti3DMatrix.h"
-
 #if defined(USE_TI_UIIOS3DMATRIX) || defined(USE_TI_UI3DMATRIX)
+#import "Ti3DMatrix.h"
+#import "TiBase.h"
 
 @implementation Ti3DMatrix
 

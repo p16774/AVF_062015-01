@@ -6,9 +6,10 @@
  * 
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
-
 #import "TiNetworkSocketProxy.h"
 #import "TiNetworkSocketTCPProxy.h"
+#import "TiBase.h"
+
 #ifdef USE_TI_NETWORKSOCKET
 @implementation TiNetworkSocketProxy
 

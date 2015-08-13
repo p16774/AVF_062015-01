@@ -7,7 +7,6 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-#import "TiBase.h"
 
 /**
  The class represents locale.

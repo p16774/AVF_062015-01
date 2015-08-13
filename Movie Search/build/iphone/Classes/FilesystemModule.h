@@ -26,7 +26,10 @@
 @property(nonatomic,readonly) NSNumber *MODE_WRITE;
 @property(nonatomic,readonly) NSNumber *MODE_READ;
 
-
+@property(nonatomic,readonly) NSString *IOS_FILE_PROTECTION_NONE;
+@property(nonatomic,readonly) NSString *IOS_FILE_PROTECTION_COMPLETE;
+@property(nonatomic,readonly) NSString *IOS_FILE_PROTECTION_COMPLETE_UNLESS_OPEN;
+@property(nonatomic,readonly) NSString *IOS_FILE_PROTECTION_COMPLETE_UNTIL_FIRST_USER_AUTHENTICATION;
 @end
 
 #endif

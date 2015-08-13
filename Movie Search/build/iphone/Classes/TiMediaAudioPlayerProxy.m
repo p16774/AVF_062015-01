@@ -353,6 +353,13 @@ MAKE_SYSTEM_PROP(STATE_PAUSED,AS_PAUSED);
 	}
 }
 
+-(void)errorReceived:(id)sender
+{
+	if ([self _hasListeners:@"error"]) {
+		NSDictionary *event = [TiUtils dictionaryWithCode:player.errorCode message:[AudioStreamer stringForErrorCode:player.errorCode]];
+		[self fireEvent:@"error" withObject:event];
+	}
+}
 @end
 
 #endif

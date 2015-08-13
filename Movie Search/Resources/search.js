@@ -1,6 +1,6 @@
 // single application file (can't work the above require elements right)
 
-exports.getMovie = function() {
+exports.getMovie = function() {	
 	
 		
 		var buildUI = function(results) {
@@ -15,6 +15,9 @@ exports.getMovie = function() {
 			// create refresh button
 			var refreshBtn = Ti.UI.createButton({
 				title: 'Choose New Movie',
+				systemButton: Ti.UI.iPhone.SystemButtonStyle.BORDERED,
+				backgroundColor: '#000',
+				color: '#fff',
 				font: { fontSize:24 },
 				top: 10,
 				width: '90%',
@@ -24,6 +27,14 @@ exports.getMovie = function() {
 					
 			// require our display elements
 			var	displayElements = require("display");
+			
+			// create window
+			var win = Ti.UI.createWindow({
+				height: Ti.UI.Fill,
+				backgroundColor: '#ffffff',
+				fullscreen: false,
+				layout: 'vertical'
+			});
 	        
 	        // place values into the app page after data pulled
 	        movieGenre = Ti.UI.createLabel({
@@ -57,12 +68,23 @@ exports.getMovie = function() {
 			
 			refreshBtn.addEventListener('click', function(e) {
 				
-				// clear window
-				displayElements.scrollView.removeAllChildren();
+				// remove all children elements
+				displayElements.cityView.remove(movieGenre);
+				displayElements.dataView.remove(movieData);
+				displayElements.dataView.remove(moviePoster);
+				displayElements.scrollView.remove(displayElements.list);
+				displayElements.scrollView.remove(refreshBtn);
+				displayElements.scrollView.remove(displayElements.cityView);
+				displayElements.scrollView.remove(displayElements.dataView);
+				displayElements.fullView.remove(displayElements.logoView);
+				displayElements.scrollView.remove(displayElements.fullView);
+				win.remove(displayElements.scrollView);
+				
+				// close window before opening a new one
+				win.close();
 				
 				// code to refresh page
 				displayElements.refreshData();
-			
 			
 			});
 			
@@ -83,6 +105,8 @@ exports.getMovie = function() {
 			win.add(displayElements.scrollView);
 			//win.add(displayElements.logoView);
 			
+			// open our window
+			win.open();
 			
 		};
 		
@@ -135,84 +159,89 @@ exports.getMovie = function() {
 			
 		};
 		
-		// pull in our display elements page
-		var displayElements = require('display');
 		
-		// create variable for our SQLite loop elements
-		var conditionObject;
-		
-		// pull the genre ids
-		var searchURL = "http://api.themoviedb.org/3/genre/movie/list?api_key=d18ca777adaacbbb6cf589285c402ed7";
-		var pulledGenre = {};
-		var getMovies = Ti.Network.createHTTPClient();
-		
-		getMovies.onload = function(e){
+		var randomMovie = function() {
 			
-			// parse the data and count the number of genres pulled
-	        var json = JSON.parse(this.responseText);	        
-	        var length = json.genres.length;
-	        
-	        // randomize our pull to make the app "discover" new movies
-	        var randID = Math.floor(Math.random() * length) + 0;
-	        var genreID = json.genres[randID].id;
-	        
-	        // pull the name of the genre to display
-	        var genreName = json.genres[randID].name;
-	        
-	        // push items into variable
-	        var pulledGenre = {
-	        	id: genreID,
-	        	name: genreName
-	        };
-						
-			var movieURL = "http://api.themoviedb.org/3/discover/movie?api_key=d18ca777adaacbbb6cf589285c402ed7&with_genres=" + pulledGenre.id;	
+			// create variable for our SQLite loop elements
+			var conditionObject;
 			
-			var getData = Ti.Network.createHTTPClient();
+			// pull the genre ids
+			var searchURL = "http://api.themoviedb.org/3/genre/movie/list?api_key=d18ca777adaacbbb6cf589285c402ed7";
+			var pulledGenre = {};
+			var getMovies = Ti.Network.createHTTPClient();
 			
-			getData.onload = function(e){
+			getMovies.onload = function(e){
 				
-		        var movieData = JSON.parse(this.responseText);  //convert the string to JS object notation
-		        var movieLength = movieData.results.length;
+				// parse the data and count the number of genres pulled
+		        var json = JSON.parse(this.responseText);	        
+		        var length = json.genres.length;
 		        
-		        // pull a random movie title from the random genre
-		        var movieResult = Math.floor(Math.random() * movieLength) + 0;
-		        var movieName = movieData.results[movieResult].original_title;
+		        // randomize our pull to make the app "discover" new movies
+		        var randID = Math.floor(Math.random() * length) + 0;
+		        var genreID = json.genres[randID].id;
 		        
+		        // pull the name of the genre to display
+		        var genreName = json.genres[randID].name;
 		        
-		        // logic check - comment out for production
-		        //console.log(movieData.results[movieResult]);
-		        
-		        
-		        // set variables from API response
-		        var movieData = {
-		        
-		       			movieID: movieData.results[movieResult].id,
-		       			language: movieData.results[movieResult].original_language,
-		        		title: movieData.results[movieResult].title,
-		       			overview: movieData.results[movieResult].overview,
-		        		backdrop: movieData.results[movieResult].backdrop_path,
-		        		date: movieData.results[movieResult].release_date,
-		        		genre: pulledGenre.name,
-		        		poster: movieData.results[movieResult].poster_path,
-		        		base: "http://image.tmdb.org/t/p/w500"
-		        			        		
-		        	};
-		        	
-
-          		// save the pulled data to the SQLite database and build the UI
-          		save(movieData);		
-		        	
-		     }; //getData.onload closing
-			
+		        // push items into variable
+		        var pulledGenre = {
+		        	id: genreID,
+		        	name: genreName
+		        };
+							
+				var movieURL = "http://api.themoviedb.org/3/discover/movie?api_key=d18ca777adaacbbb6cf589285c402ed7&with_genres=" + pulledGenre.id;	
+				
+				var getData = Ti.Network.createHTTPClient();
+				
+				getData.onload = function(e){
+					
+			        var movieData = JSON.parse(this.responseText);  //convert the string to JS object notation
+			        var movieLength = movieData.results.length;
+			        
+			        // pull a random movie title from the random genre
+			        var movieResult = Math.floor(Math.random() * movieLength) + 0;
+			        var movieName = movieData.results[movieResult].original_title;
+			        
+			        
+			        // logic check - comment out for production
+			        //console.log(movieData.results[movieResult]);
+			        
+			        
+			        // set variables from API response
+			        var movieData = {
+			        
+			       			movieID: movieData.results[movieResult].id,
+			       			language: movieData.results[movieResult].original_language,
+			        		title: movieData.results[movieResult].title,
+			       			overview: movieData.results[movieResult].overview,
+			        		backdrop: movieData.results[movieResult].backdrop_path,
+			        		date: movieData.results[movieResult].release_date,
+			        		genre: pulledGenre.name,
+			        		poster: movieData.results[movieResult].poster_path,
+			        		base: "http://image.tmdb.org/t/p/w500"
+			        			        		
+			        	};
+			        	
+	
+	          		// save the pulled data to the SQLite database and build the UI
+	          		save(movieData);		
+			        	
+			     }; //getData.onload closing
+				
+				// setup and run data pull for current location
+				getData.open("GET", movieURL);
+				getData.send(); 
+				
+				
+			};
+				
 			// setup and run data pull for current location
-			getData.open("GET", movieURL);
-			getData.send(); 
+			getMovies.open("GET", searchURL);
+			getMovies.send();
 			
-			
-		};
-			
-		// setup and run data pull for current location
-		getMovies.open("GET", searchURL);
-		getMovies.send();
+		}; //end the randomMovie function
+		
+		// run the randomMovie funciton to start the app
+		randomMovie();
 	
 }; // end getLocation function

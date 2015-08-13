@@ -192,6 +192,26 @@ extern NSString * TI_APPLICATION_RESOURCE_DIR;
 	return [[[TiFilesystemFileProxy alloc] initWithFile:newpath] autorelease];
 }
 
+-(NSString*)IOS_FILE_PROTECTION_NONE
+{
+	return NSFileProtectionNone;
+}
+
+-(NSString*)IOS_FILE_PROTECTION_COMPLETE
+{
+	return NSFileProtectionComplete;
+}
+
+-(NSString*)IOS_FILE_PROTECTION_COMPLETE_UNLESS_OPEN
+{
+	return NSFileProtectionCompleteUnlessOpen;
+}
+
+-(NSString*)IOS_FILE_PROTECTION_COMPLETE_UNTIL_FIRST_USER_AUTHENTICATION
+{
+	return NSFileProtectionCompleteUntilFirstUserAuthentication;
+}
+
 @end
 
 #endif

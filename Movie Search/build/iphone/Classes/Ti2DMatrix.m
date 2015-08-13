@@ -7,7 +7,7 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 #import "Ti2DMatrix.h"
-
+#import "TiBase.h"
 
 @implementation Ti2DMatrix
 

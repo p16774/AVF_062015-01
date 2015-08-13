@@ -209,5 +209,7 @@
 {
     return UIStatusBarAnimationNone;
 }
-
+- (BOOL)disablesAutomaticKeyboardDismissal {
+    return NO;
+}
 @end

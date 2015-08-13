@@ -9,6 +9,7 @@
 #ifdef USE_TI_UIIPHONEALERTDIALOGSTYLE
 
 #import "TiUIiPhoneAlertDialogStyleProxy.h"
+#import "TiBase.h"
 
 @implementation TiUIiPhoneAlertDialogStyleProxy
 

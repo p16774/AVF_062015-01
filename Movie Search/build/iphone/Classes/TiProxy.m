@@ -233,9 +233,10 @@ void TiClassSelectorFunction(TiBindingRunLoop runloop, void * payload)
     pthread_rwlock_wrlock(&dynpropsLock);
     if (dynprops == nil) {
         dynprops = [[NSMutableDictionary alloc] init];
+		dynpropnames = [[NSMutableArray alloc] init];
     }
     if ([dynprops valueForKey:name] == nil) {
-        [dynprops setValue:((value == nil) ? [NSNull null] : value) forKey:name];
+		[self addKey:name toValue:((value == nil) ? [NSNull null] : value)];
     }
     pthread_rwlock_unlock(&dynpropsLock);
 }
@@ -425,6 +426,7 @@ void TiClassSelectorFunction(TiBindingRunLoop runloop, void * payload)
 	
 	pthread_rwlock_wrlock(&dynpropsLock);
 	RELEASE_TO_NIL(dynprops);
+	RELEASE_TO_NIL(dynpropnames);
 	pthread_rwlock_unlock(&dynpropsLock);
 	
 	RELEASE_TO_NIL(baseURL);
@@ -582,10 +584,12 @@ void TiClassSelectorFunction(TiBindingRunLoop runloop, void * payload)
 
 #pragma mark Public
 
+
 -(id<NSFastEnumeration>)allKeys
 {
 	pthread_rwlock_rdlock(&dynpropsLock);
-	id<NSFastEnumeration> keys = [dynprops allKeys];
+	// Make sure the keys are in the same order as they were added in the JS
+	id<NSFastEnumeration> keys = dynpropnames;
 	pthread_rwlock_unlock(&dynpropsLock);
 	
 	return keys;
@@ -1067,6 +1071,18 @@ void TiClassSelectorFunction(TiBindingRunLoop runloop, void * payload)
  
 DEFINE_EXCEPTIONS
 
+-(void)addKey:(NSString*)key toValue:(id)val
+{
+	[dynprops setValue:val forKey:key];
+	for (NSInteger i = 0, len = [dynpropnames count]; i < len; i++) {
+		if([[dynpropnames objectAtIndex:i] isEqualToString:key]) {
+			[dynpropnames removeObjectAtIndex:i];
+			break;
+		}
+	}
+	[dynpropnames addObject:key];
+}
+
 - (id) valueForUndefinedKey: (NSString *) key
 {
 	if ([key isEqualToString:@"toString"] || [key isEqualToString:@"valueOf"])
@@ -1125,6 +1141,7 @@ DEFINE_EXCEPTIONS
 	else
 	{
 		dynprops = [[NSMutableDictionary alloc] init];
+		dynpropnames = [[NSMutableArray alloc] init];
 	}
     
     // TODO: Clarify internal difference between nil/NSNull
@@ -1144,7 +1161,7 @@ DEFINE_EXCEPTIONS
         if ([propvalue isKindOfClass:[TiProxy class]]) {
             [self rememberProxy:propvalue];
         }
-		[dynprops setValue:propvalue forKey:key];
+		[self addKey:key toValue:propvalue];		
     }
 	pthread_rwlock_unlock(&dynpropsLock);
     
@@ -1170,6 +1187,12 @@ DEFINE_EXCEPTIONS
 	if (dynprops!=nil)
 	{
 		[dynprops removeObjectForKey:key];
+		for(NSInteger i = 0, len = [dynpropnames count]; i < len; i++) {
+			if([[dynpropnames objectAtIndex:i] isEqualToString:key]) {
+				[dynpropnames removeObjectAtIndex:i];
+				break;
+			}
+		}
 	}
 	pthread_rwlock_unlock(&dynpropsLock);
 }

@@ -8,6 +8,7 @@
  */
 
 #import "TiLocale.h"
+#import "TiBase.h"
 
 @implementation TiLocale
 

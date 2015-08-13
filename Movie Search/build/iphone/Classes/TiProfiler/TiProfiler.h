@@ -3,7 +3,7 @@
  * Copyright (c) 2009-2015 by Appcelerator, Inc. All Rights Reserved.
  * Proprietary and Confidential - This source code is not for redistribution
  */
-#import <JavaScriptCore/TiContextRef.h>
+#import "TiToJS.h"
 
 #ifdef __cplusplus
 #define EXTERN_FUNC extern "C"

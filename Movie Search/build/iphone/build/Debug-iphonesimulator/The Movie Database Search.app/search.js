@@ -1,1 +1,1 @@
-/Users/nwharry/GitHub/AVF_062015-01 week 3/Wunderland Weather App/Resources/search.js
+/Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie Search/Resources/search.js

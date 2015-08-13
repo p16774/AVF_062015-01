@@ -10,7 +10,6 @@
 #import "KrollContext.h"
 #import "KrollObject.h"
 #import "TiUtils.h"
-#import "TiBase.h"
 #import "TiExceptionHandler.h"
 
 @implementation KrollTimer

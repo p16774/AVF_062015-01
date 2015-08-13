@@ -10,7 +10,7 @@
 #if defined(USE_TI_FILESYSTEM) || defined(USE_TI_DATABASE) || defined(USE_TI_MEDIA)
 
 #include <sys/xattr.h>
-
+#import "TiBase.h"
 #import "TiUtils.h"
 #import "TiBlob.h"
 #import "TiFilesystemFileProxy.h"
@@ -153,6 +153,29 @@ FILENOOP(setHidden:(id)x);
 	NSDictionary * resultDict = [fm attributesOfFileSystemForPath:path error:&error];
 	if (error!=nil) return NUMBOOL(NO);
 	return [resultDict objectForKey:NSFileSystemFreeSize];
+}
+
+-(NSString *)getProtectionKey:(id)args
+{
+	NSError *error = nil;
+	NSDictionary * resultDict = [fm attributesOfItemAtPath:path error:&error];
+	if (error != nil) {
+		NSLog(@"[ERROR] Error getting protection key: %@", [TiUtils messageFromError:error]);
+		return nil;
+	}
+	return [resultDict objectForKey:NSFileProtectionKey];
+}
+
+-(NSNumber *)setProtectionKey:(id)args
+{
+	ENSURE_SINGLE_ARG(args, NSString);
+	NSError *error = nil;
+	BOOL result = [fm setAttributes:[NSDictionary dictionaryWithObjectsAndKeys:args, NSFileProtectionKey, nil] ofItemAtPath:path error:&error];
+	if (error != nil) {
+		NSLog(@"[ERROR] Error setting protection key: %@", [TiUtils messageFromError:error]);
+		return NUMBOOL(NO);
+	}
+	return NUMBOOL(YES);
 }
 
 -(id)createDirectory:(id)args

@@ -161,7 +161,21 @@ typedef void(^EKEventStoreRequestAccessCompletionHandler)(BOOL granted, NSError 
         DebugLog(@"Could not instantiate an event of the event store.");
         return nil;
     }
-    EKCalendar* calendar_ = [ourStore calendarWithIdentifier:arg];
+    EKCalendar* calendar_;
+    if ([TiUtils isIOS8OrGreater]) {
+        //Instead of getting calendar by identifier, have to get all and check for match
+        //not optimal but best way to fix non existing shared calendar error
+        NSArray *allCalendars = [ourStore calendarsForEntityType:EKEntityTypeEvent];
+        for (EKCalendar *cal in allCalendars) {
+            if ([cal.calendarIdentifier isEqualToString:arg]) {
+                calendar_ = cal;
+                break;
+            }
+        }
+    }
+    else {
+        calendar_ = [ourStore calendarWithIdentifier:arg];
+    }
     if (calendar_ == NULL) {
         return NULL;
     }
@@ -268,7 +282,7 @@ typedef void(^EKEventStoreRequestAccessCompletionHandler)(BOOL granted, NSError 
 MAKE_SYSTEM_PROP(STATUS_NONE,EKEventStatusNone);
 MAKE_SYSTEM_PROP(STATUS_CONFIRMED,EKEventStatusConfirmed);
 MAKE_SYSTEM_PROP(STATUS_TENTATIVE,EKEventStatusNone);
-MAKE_SYSTEM_PROP(STATUS_CANCELED,EKEventStatusNone);
+MAKE_SYSTEM_PROP(STATUS_CANCELLED,EKEventStatusNone);
 
 MAKE_SYSTEM_PROP(AVAILABILITY_NOTSUPPORTED, EKEventAvailabilityNotSupported);
 MAKE_SYSTEM_PROP(AVAILABILITY_BUSY, EKEventAvailabilityBusy);

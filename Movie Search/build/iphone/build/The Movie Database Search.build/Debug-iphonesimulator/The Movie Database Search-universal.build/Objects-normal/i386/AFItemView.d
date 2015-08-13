@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/AFOpenFlow/AFItemView.m \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/AFOpenFlow/AFItemView.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/AFOpenFlow/AFOpenFlowConstants.h
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/AFOpenFlow/AFItemView.m \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/AFOpenFlow/AFItemView.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/AFOpenFlow/AFOpenFlowConstants.h

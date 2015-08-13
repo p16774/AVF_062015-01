@@ -11,7 +11,6 @@
 
 #ifdef KROLL_COVERAGE
 
-#import "TiBase.h"
 #import "KrollObject.h"
 #import "KrollMethod.h"
 

@@ -7,7 +7,7 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-#include "TiBase.h"
+#include "TiToJS.h"
 
 typedef enum {
     OUT,

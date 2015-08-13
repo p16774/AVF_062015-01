@@ -8,6 +8,7 @@
  */
 
 #import "TiStylesheet.h"
+#import "TiBase.h"
 
 #define DEBUG_STYLESHEETS 0
 

@@ -1,13 +1,11 @@
 dependencies: \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiDOMCommentProxy.m \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiDOMCommentProxy.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TIDOMCharacterDataProxy.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiProxy.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiBase.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiThreading.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiPublicAPI.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiEvaluator.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/KrollContext.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TiDOMCommentProxy.m \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TiDOMCommentProxy.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TIDOMCharacterDataProxy.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TiProxy.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TiEvaluator.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/KrollContext.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TiToJS.h \
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -15,31 +13,31 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/KrollCallback.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/KrollObject.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/TiDOMNodeProxy.h \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/GDataXMLNode.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/tree.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xmlversion.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xmlexports.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xmlstring.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xmlregexp.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/dict.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xmlmemory.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/threads.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/globals.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/parser.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/hash.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/valid.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xmlerror.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/list.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xmlautomata.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/entities.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/encoding.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xmlIO.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/SAX.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xlink.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/SAX2.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xpath.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.4.sdk/usr/include/libxml2/libxml/xpathInternals.h
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/KrollCallback.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/KrollObject.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/TiDOMNodeProxy.h \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/GDataXMLNode.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/tree.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xmlversion.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xmlexports.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xmlstring.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xmlregexp.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/dict.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xmlmemory.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/threads.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/globals.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/parser.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/hash.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/valid.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xmlerror.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/list.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xmlautomata.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/entities.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/encoding.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xmlIO.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/SAX.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xlink.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/SAX2.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xpath.h \
+  /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0.sdk/usr/include/libxml2/libxml/xpathInternals.h

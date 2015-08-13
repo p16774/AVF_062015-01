@@ -7,7 +7,7 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 #if defined(USE_TI_UIIPHONETABLEVIEWSTYLE) || defined(USE_TI_UIIPHONELISTVIEWSTYLE)
-
+#import "TiBase.h"
 #import "TiUIiPhoneTableViewStyleProxy.h"
 
 @implementation TiUIiPhoneTableViewStyleProxy

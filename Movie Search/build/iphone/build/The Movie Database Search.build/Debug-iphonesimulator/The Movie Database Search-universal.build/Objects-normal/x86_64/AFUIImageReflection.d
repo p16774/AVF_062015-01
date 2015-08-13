@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.m \
-  /Users/nwharry/GitHub/AVF_062015-01\ week\ 3/Wunderland\ Weather\ App/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.h
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.m \
+  /Users/Nate/Documents/Appcelerator_Studio_Workspace/Movie\ Search/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.h
